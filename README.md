@@ -6,12 +6,12 @@ An AI-powered agentic system for automated podcast content processing, designed 
 
 - **Automated Summarization**: Generates 200-300 word summaries covering all episode sections
 - **Key Takeaways Extraction**: Identifies top 5 actionable insights from each episode
-- **Quote Mining**: Extracts 3-10 notable, shareable quotes with timestamps
-- **Topic Tagging**: Auto-generates 5-10 SEO-optimized topic tags
+- **Quote Mining**: Extracts notable, shareable quotes with timestamps
+- **Topic Tagging**: Auto-generates SEO-optimized topic tags
 - **Multi-Source Fact-Checking**: Verifies claims using Perplexity, Tavily, Google Fact Check, and SerpAPI with cross-source reconciliation
 - **Transparent Reasoning**: Detailed logs showing agent decision-making process
 - **Multiple Output Formats**: JSON and Markdown reports
-- **Model-Agnostic**: Uses OpenRouter for access to Claude, GPT-4, Gemini, and more
+- **Model-Agnostic**: Uses OpenRouter for access to Claude, GPT-5, Gemini, and more
 
 ## Architecture
 
@@ -42,7 +42,7 @@ PodcastOrchestrator
 
 ```bash
 git clone <repository-url>
-cd seekr-2
+cd <repository>
 ```
 
 ### 2. Create virtual environment
@@ -107,11 +107,10 @@ python main.py process --all --model openai/gpt-4o
 ```
 
 Available models include:
-- `anthropic/claude-3.5-sonnet` (default, recommended)
-- `anthropic/claude-3-opus`
-- `openai/gpt-4o`
-- `openai/gpt-4-turbo`
-- `google/gemini-pro-1.5`
+- `anthropic/claude-4.5-sonnet` (default, recommended)
+- `anthropic/claude-4.1-opus`
+- `openai/gpt-5`
+- `google/gemini-2.5-pro`
 
 ### Custom Output Directory
 
@@ -224,7 +223,7 @@ Set in `.env` file:
 
 ```bash
 OPENROUTER_API_KEY=your_api_key_here
-DEFAULT_MODEL=anthropic/claude-3.5-sonnet
+DEFAULT_MODEL=anthropic/claude-4.5-sonnet
 MAX_PARALLEL_TASKS=5
 MAX_RETRIES=3
 REQUEST_TIMEOUT=60
@@ -237,7 +236,7 @@ Customize processing in `config/settings.yaml`:
 
 ```yaml
 llm:
-  default_model: "anthropic/claude-3.5-sonnet"
+  default_model: "anthropic/claude-4.5-sonnet"
   max_tokens: 4096
   temperature: 0.7
 
@@ -347,7 +346,7 @@ Typical processing times (using Claude 3.5 Sonnet):
 ## Cost Estimation
 
 ### OpenRouter (LLM)
-- Claude 3.5 Sonnet: $3 per 1M tokens (input) / $15 per 1M tokens (output)
+- Claude 4.5 Sonnet: $3 per 1M tokens (input) / $15 per 1M tokens (output)
 - Per episode: ~$0.05-0.15
 - 100 episodes: ~$5-15
 
@@ -395,10 +394,6 @@ For issues, questions, or contributions:
 1. Check existing documentation
 2. Review reasoning logs for debugging
 3. Open an issue with reproduction steps
-
-## License
-
-[Your License Here]
 
 ## Acknowledgments
 

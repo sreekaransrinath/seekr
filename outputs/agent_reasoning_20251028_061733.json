@@ -6,7 +6,7 @@
     "reasoning": "Processing episode from ep001_remote_work.json. Will execute: Parse \u2192 Summarize \u2192 Extract \u2192 Fact-check \u2192 Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.",
     "context": {
       "episode_file": "sample_inputs/ep001_remote_work.json",
-      "model": "anthropic/claude-3.5-sonnet"
+      "model": "anthropic/claude-4.5-sonnet"
     },
     "outcome": null
   },
@@ -123,7 +123,7 @@
     "reasoning": "Processing episode from ep002_ai_healthcare.json. Will execute: Parse \u2192 Summarize \u2192 Extract \u2192 Fact-check \u2192 Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.",
     "context": {
       "episode_file": "sample_inputs/ep002_ai_healthcare.json",
-      "model": "anthropic/claude-3.5-sonnet"
+      "model": "anthropic/claude-4.5-sonnet"
     },
     "outcome": null
   },
@@ -242,7 +242,7 @@
     "reasoning": "Processing episode from ep003_bootstrapping.json. Will execute: Parse \u2192 Summarize \u2192 Extract \u2192 Fact-check \u2192 Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.",
     "context": {
       "episode_file": "sample_inputs/ep003_bootstrapping.json",
-      "model": "anthropic/claude-3.5-sonnet"
+      "model": "anthropic/claude-4.5-sonnet"
     },
     "outcome": null
   },

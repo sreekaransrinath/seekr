@@ -7,7 +7,7 @@ Task: Episode Processing Pipeline
 Reasoning: Processing episode from ep001_remote_work.json. Will execute: Parse → Summarize → Extract → Fact-check → Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.
 Context: {
   "episode_file": "sample_inputs/ep001_remote_work.json",
-  "model": "anthropic/claude-3.5-sonnet"
+  "model": "anthropic/claude-4.5-sonnet"
 }
 --------------------------------------------------------------------------------
 
@@ -106,7 +106,7 @@ Task: Episode Processing Pipeline
 Reasoning: Processing episode from ep002_ai_healthcare.json. Will execute: Parse → Summarize → Extract → Fact-check → Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.
 Context: {
   "episode_file": "sample_inputs/ep002_ai_healthcare.json",
-  "model": "anthropic/claude-3.5-sonnet"
+  "model": "anthropic/claude-4.5-sonnet"
 }
 --------------------------------------------------------------------------------
 
@@ -208,7 +208,7 @@ Task: Episode Processing Pipeline
 Reasoning: Processing episode from ep003_bootstrapping.json. Will execute: Parse → Summarize → Extract → Fact-check → Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.
 Context: {
   "episode_file": "sample_inputs/ep003_bootstrapping.json",
-  "model": "anthropic/claude-3.5-sonnet"
+  "model": "anthropic/claude-4.5-sonnet"
 }
 --------------------------------------------------------------------------------
 
