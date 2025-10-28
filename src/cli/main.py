@@ -245,7 +245,7 @@ def process(
     console.print(f"\nProcessed {len(reports)} episode(s)")
     console.print(f"Total tokens used: {sum(r.metrics.total_tokens_used for r in reports):,}")
     console.print(f"Total time: {sum(r.metrics.processing_time_seconds for r in reports):.2f}s")
-    console.print(f"\nOutputs saved to: {output_dir}/")
+    console.print(f"\nOutputs saved to: outputs/run_{run_timestamp}/")
 
 
 @cli.command()
