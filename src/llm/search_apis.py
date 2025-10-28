@@ -5,6 +5,8 @@ from typing import List, Optional
 import httpx
 from pydantic import BaseModel, Field
 
+from .api_utils import is_valid_api_key
+
 
 class SearchResult(BaseModel):
     """A single search result from an API."""
@@ -26,9 +28,11 @@ class PerplexityClient:
         Args:
             api_key: Perplexity API key
         """
-        self.api_key = api_key or os.getenv("PERPLEXITY_API_KEY")
+        # Validate API key and filter out placeholders
+        key = api_key or os.getenv("PERPLEXITY_API_KEY")
+        self.api_key = key if is_valid_api_key(key) else None
         self.base_url = "https://api.perplexity.ai"
-        self.client = httpx.Client(timeout=30.0)
+        self.client = httpx.Client(timeout=30.0) if self.api_key else None
 
     def search(self, query: str, max_results: int = 3) -> List[SearchResult]:
         """
@@ -106,7 +110,8 @@ class PerplexityClient:
 
     def close(self):
         """Close HTTP client."""
-        self.client.close()
+        if self.client:
+            self.client.close()
 
 
 class TavilyClient:
@@ -119,7 +124,9 @@ class TavilyClient:
         Args:
             api_key: Tavily API key
         """
-        self.api_key = api_key or os.getenv("TAVILY_API_KEY")
+        # Validate API key and filter out placeholders
+        key = api_key or os.getenv("TAVILY_API_KEY")
+        self.api_key = key if is_valid_api_key(key) else None
 
         # Initialize Tavily client if available
         self.client = None
@@ -182,8 +189,10 @@ class GoogleFactCheckClient:
         Args:
             api_key: Google API key
         """
-        self.api_key = api_key or os.getenv("GOOGLE_FACT_CHECK_API_KEY")
-        self.client = httpx.Client(timeout=30.0)
+        # Validate API key and filter out placeholders
+        key = api_key or os.getenv("GOOGLE_FACT_CHECK_API_KEY")
+        self.api_key = key if is_valid_api_key(key) else None
+        self.client = httpx.Client(timeout=30.0) if self.api_key else None
 
     def search(self, query: str, max_results: int = 3) -> List[SearchResult]:
         """
@@ -235,7 +244,8 @@ class GoogleFactCheckClient:
 
     def close(self):
         """Close HTTP client."""
-        self.client.close()
+        if self.client:
+            self.client.close()
 
 
 class SerpAPIClient:
@@ -248,8 +258,10 @@ class SerpAPIClient:
         Args:
             api_key: SerpAPI key
         """
-        self.api_key = api_key or os.getenv("SERPAPI_KEY")
-        self.client = httpx.Client(timeout=30.0)
+        # Validate API key and filter out placeholders
+        key = api_key or os.getenv("SERPAPI_KEY")
+        self.api_key = key if is_valid_api_key(key) else None
+        self.client = httpx.Client(timeout=30.0) if self.api_key else None
 
     def search(self, query: str, max_results: int = 3) -> List[SearchResult]:
         """
@@ -297,4 +309,5 @@ class SerpAPIClient:
 
     def close(self):
         """Close HTTP client."""
-        self.client.close()
+        if self.client:
+            self.client.close()

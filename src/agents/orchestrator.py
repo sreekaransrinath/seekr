@@ -137,7 +137,7 @@ class PodcastOrchestrator:
             self.reasoning.log_execution(
                 task="Extract Key Notes",
                 reasoning=(
-                    "Extracting 5 takeaways, 3-10 quotes, and 5-10 topic tags. "
+                    "Extractingtakeaways, quotes, and topic tags. "
                     "Using LLM to identify most valuable and engaging content."
                 ),
             )
