@@ -10,6 +10,7 @@ from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn
 
 from ..agents import PodcastOrchestrator
+from ..config.paths import generate_run_directory
 from ..llm import LLMGateway
 from ..models import AggregateReport
 
@@ -46,13 +47,6 @@ def cli():
     help="LLM model to use (default: anthropic/claude-4.5-sonnet)",
 )
 @click.option(
-    "--output-dir",
-    "-o",
-    type=click.Path(path_type=Path),
-    default="outputs",
-    help="Output directory (default: outputs/)",
-)
-@click.option(
     "--api-key",
     help="OpenRouter API key (overrides OPENROUTER_API_KEY env var)",
 )
@@ -71,7 +65,6 @@ def process(
     episode: Optional[Path],
     all: bool,
     model: str,
-    output_dir: Path,
     api_key: Optional[str],
     no_reasoning: bool,
     verbose: bool,
@@ -110,10 +103,13 @@ def process(
         console.print("[red]Error: No episodes found to process[/red]")
         sys.exit(1)
 
+    # Generate timestamped run directory
+    run_timestamp, reports_dir, logs_dir = generate_run_directory()
+
     console.print("\n[bold cyan]Podcast Content Management Agent[/bold cyan]")
     console.print(f"Model: {model}")
     console.print(f"Episodes to process: {len(episodes_to_process)}")
-    console.print(f"Output directory: {output_dir}")
+    console.print(f"Run directory: outputs/run_{run_timestamp}/")
     console.print("")
 
     # Initialize LLM gateway
@@ -129,7 +125,8 @@ def process(
     # Initialize orchestrator
     orchestrator = PodcastOrchestrator(
         llm_gateway=llm,
-        output_dir=output_dir,
+        reports_dir=reports_dir,
+        logs_dir=logs_dir,
         enable_reasoning_logs=not no_reasoning,
     )
 
@@ -230,11 +227,11 @@ def process(
         )
 
         # Save aggregate report
-        agg_json_path = output_dir / "aggregate_report.json"
+        agg_json_path = reports_dir / "aggregate_report.json"
         with open(agg_json_path, "w") as f:
             f.write(aggregate.model_dump_json(indent=2))
 
-        agg_md_path = output_dir / "aggregate_report.md"
+        agg_md_path = reports_dir / "aggregate_report.md"
         with open(agg_md_path, "w") as f:
             f.write(aggregate.to_markdown())
 

@@ -1,0 +1,668 @@
+{
+  "episode_reports": [
+    {
+      "episode": {
+        "episode_id": "ep001",
+        "title": "The Future of Remote Work",
+        "host": "Sarah Johnson",
+        "guests": [
+          "Mark Rivera"
+        ],
+        "transcript": [
+          {
+            "timestamp": "00:00",
+            "speaker": "Sarah",
+            "section": "Introduction",
+            "text": "Welcome back to Work Reimagined. I’m Sarah Johnson, and today we’re diving into remote work — not just the hype, but what it really looks like in 2025 and beyond."
+          },
+          {
+            "timestamp": "00:15",
+            "speaker": "Mark",
+            "section": "Introduction",
+            "text": "Thanks Sarah. Excited to be here. Remote work has evolved a lot in just a few years."
+          },
+          {
+            "timestamp": "00:30",
+            "speaker": "Sarah",
+            "section": "Introduction",
+            "text": "Absolutely. So Mark, a lot of people equate remote work with working from anywhere. But is that the full picture?"
+          },
+          {
+            "timestamp": "00:45",
+            "speaker": "Mark",
+            "section": "Deep Dive",
+            "text": "Not quite. It’s more about async-first culture, documentation, and autonomy. Being remote doesn’t just mean a location; it means structured processes and trust."
+          },
+          {
+            "timestamp": "01:10",
+            "speaker": "Sarah",
+            "section": "Deep Dive",
+            "text": "Got it. So how do companies build that culture?"
+          },
+          {
+            "timestamp": "01:20",
+            "speaker": "Mark",
+            "section": "Deep Dive",
+            "text": "Well, look at GitLab, Automattic, and Doist. They’ve literally written handbooks for everything. Employees can figure things out without asking for constant guidance."
+          },
+          {
+            "timestamp": "01:50",
+            "speaker": "Sarah",
+            "section": "Examples",
+            "text": "Wow, handbooks instead of manuals. Do you think that scales for smaller teams?"
+          },
+          {
+            "timestamp": "02:05",
+            "speaker": "Mark",
+            "section": "Examples",
+            "text": "Absolutely. Even small teams benefit from clear documentation. It reduces context-switching and keeps knowledge from being siloed."
+          },
+          {
+            "timestamp": "02:30",
+            "speaker": "Sarah",
+            "section": "Trends",
+            "text": "Interesting. What about tools? Are Zoom and Slack enough?"
+          },
+          {
+            "timestamp": "02:45",
+            "speaker": "Mark",
+            "section": "Trends",
+            "text": "They help, but tools aren’t the solution. Culture is. Slack is great, but if you rely on it for everything, people will burn out."
+          },
+          {
+            "timestamp": "03:10",
+            "speaker": "Sarah",
+            "section": "Trends",
+            "text": "True. So async communication is key. How do teams measure productivity without micromanaging?"
+          },
+          {
+            "timestamp": "03:25",
+            "speaker": "Mark",
+            "section": "Trends",
+            "text": "Outcomes over hours. Set goals, track progress on deliverables, and trust the team. Transparency matters more than check-ins."
+          },
+          {
+            "timestamp": "03:55",
+            "speaker": "Sarah",
+            "section": "Challenges",
+            "text": "That makes sense. What about loneliness or lack of connection? It’s often cited as a remote work downside."
+          },
+          {
+            "timestamp": "04:10",
+            "speaker": "Mark",
+            "section": "Challenges",
+            "text": "Regular virtual coffee chats, occasional in-person retreats, and team rituals help. Remote doesn’t mean isolated; it just needs intention."
+          },
+          {
+            "timestamp": "04:45",
+            "speaker": "Sarah",
+            "section": "Predictions",
+            "text": "So, predictions for 2025 and beyond?"
+          },
+          {
+            "timestamp": "05:00",
+            "speaker": "Mark",
+            "section": "Predictions",
+            "text": "Remote-first companies will dominate talent acquisition. Local offices might become optional hubs, and async culture will become standard practice."
+          },
+          {
+            "timestamp": "05:25",
+            "speaker": "Sarah",
+            "section": "Closing",
+            "text": "Great insights, Mark. Before we wrap, any advice for teams transitioning to remote work?"
+          },
+          {
+            "timestamp": "05:35",
+            "speaker": "Mark",
+            "section": "Closing",
+            "text": "Focus on documentation, set clear goals, invest in culture, and trust your team. That’s the foundation."
+          },
+          {
+            "timestamp": "06:00",
+            "speaker": "Sarah",
+            "section": "Closing",
+            "text": "Thanks so much for joining us. And thank you to our listeners for tuning in to Work Reimagined."
+          }
+        ],
+        "duration_estimate": "06:00",
+        "section_count": 7,
+        "speaker_count": 2,
+        "word_count": 326
+      },
+      "summary": {
+        "episode_id": "ep001",
+        "summary_text": "# Episode Summary\n\n**Step 1 & 2 - Analysis Complete**\n\nCore problem: How remote work has evolved beyond location flexibility into a structured, trust-based operational model.\n\nTop 3 insights:\n1. Remote work requires async-first culture with comprehensive documentation, not just location flexibility\n2. Productivity measurement must shift from hours to outcomes with transparent goal-tracking\n3. Successful remote companies prioritize intentional connection over constant communication\n\n**Final Summary:**\n\nSarah Johnson and Mark Rivera dissect the reality of remote work in 2025, moving past the \"work from anywhere\" narrative to reveal what truly makes distributed teams successful.\n\nRivera challenges the common misconception that remote work simply means location independence, arguing instead that it demands async-first culture, comprehensive documentation, and structured autonomy. He points to GitLab, Automattic, and Doist as exemplars—companies that have replaced ad-hoc guidance with detailed handbooks, enabling employees to solve problems independently while preventing knowledge silos. This approach, Rivera emphasizes, scales effectively even for smaller teams by reducing context-switching.\n\nThe conversation shifts to productivity measurement, where Rivera advocates for outcomes-based evaluation rather than time-tracking, stressing that transparency in goal-setting matters more than frequent check-ins. Addressing the isolation concern, he recommends intentional practices like virtual coffee chats and periodic in-person retreats, noting that remote work requires deliberate connection-building rather than spontaneous office interactions.\n\nLooking ahead, Rivera predicts remote-first companies will dominate talent acquisition as physical offices transition to optional collaboration hubs and async communication becomes industry standard. His final advice for transitioning teams: prioritize documentation, establish clear deliverables, invest deliberately in culture, and fundamentally trust your workforce—these elements form the foundation of sustainable remote operations.\n\n**Word count: 217**",
+        "word_count": 266,
+        "sections_covered": [
+          "Introduction",
+          "Deep Dive",
+          "Examples",
+          "Trends",
+          "Challenges",
+          "Predictions",
+          "Closing"
+        ],
+        "key_themes": [
+          "remote work",
+          "artificial intelligence",
+          "leadership"
+        ]
+      },
+      "key_notes": {
+        "episode_id": "ep001",
+        "takeaways": [
+          {
+            "text": "Remote work success depends on async-first culture and documentation, not just location flexibility or communication tools",
+            "relevance_score": 0.95
+          },
+          {
+            "text": "Measure productivity by outcomes and deliverables rather than hours worked to avoid micromanagement in remote teams",
+            "relevance_score": 0.92
+          },
+          {
+            "text": "Create comprehensive handbooks for processes to reduce context-switching and prevent knowledge silos, even in small teams",
+            "relevance_score": 0.88
+          },
+          {
+            "text": "Over-reliance on synchronous tools like Slack leads to burnout; intentionally design for asynchronous communication",
+            "relevance_score": 0.85
+          },
+          {
+            "text": "Combat remote isolation through intentional connection: virtual coffee chats, occasional in-person retreats, and team rituals",
+            "relevance_score": 0.82
+          }
+        ],
+        "quotes": [
+          {
+            "timestamp": "00:45",
+            "speaker": "Mark",
+            "text": "Being remote doesn't just mean a location; it means structured processes and trust.",
+            "context": "Discussing the true nature of remote work beyond physical location",
+            "engagement_score": 0.92
+          },
+          {
+            "timestamp": "02:45",
+            "speaker": "Mark",
+            "text": "Tools aren't the solution. Culture is. Slack is great, but if you rely on it for everything, people will burn out.",
+            "context": "Addressing the common misconception that remote work is primarily a tools problem",
+            "engagement_score": 0.88
+          },
+          {
+            "timestamp": "03:25",
+            "speaker": "Mark",
+            "text": "Outcomes over hours. Set goals, track progress on deliverables, and trust the team. Transparency matters more than check-ins.",
+            "context": "Explaining how to measure productivity in remote teams",
+            "engagement_score": 0.85
+          },
+          {
+            "timestamp": "04:10",
+            "speaker": "Mark",
+            "text": "Remote doesn't mean isolated; it just needs intention.",
+            "context": "Addressing concerns about loneliness in remote work",
+            "engagement_score": 0.83
+          },
+          {
+            "timestamp": "05:35",
+            "speaker": "Mark",
+            "text": "Focus on documentation, set clear goals, invest in culture, and trust your team. That's the foundation.",
+            "context": "Final advice for teams transitioning to remote work",
+            "engagement_score": 0.79
+          }
+        ],
+        "topics": [
+          "remote-work",
+          "async-communication",
+          "distributed-teams",
+          "workplace-productivity",
+          "remote-culture",
+          "documentation",
+          "outcome-based-management",
+          "future-of-work",
+          "team-collaboration"
+        ]
+      },
+      "fact_checks": {
+        "episode_id": "ep001",
+        "fact_checks": [],
+        "total_claims": 0,
+        "verified_count": 0,
+        "unverified_count": 0
+      },
+      "metrics": {
+        "total_tokens_used": 7886,
+        "api_calls_made": 5,
+        "processing_time_seconds": 27.194653034210205,
+        "model_used": "anthropic/claude-4.5-sonnet"
+      },
+      "generated_at": "2025-10-28T06:46:49.839458"
+    },
+    {
+      "episode": {
+        "episode_id": "ep002",
+        "title": "AI in Healthcare: Hype or Reality?",
+        "host": "David Chen",
+        "guests": [
+          "Dr. Priya Patel",
+          "Alex Moore"
+        ],
+        "transcript": [
+          {
+            "timestamp": "00:00",
+            "speaker": "David",
+            "section": "Introduction",
+            "text": "Hello everyone, and welcome to Tech Health Today. I’m David Chen. AI is everywhere, but in healthcare it’s complicated. Today, we’ll separate hype from reality."
+          },
+          {
+            "timestamp": "00:15",
+            "speaker": "Dr. Priya",
+            "section": "Introduction",
+            "text": "Hi David. Excited to discuss the real applications and limitations."
+          },
+          {
+            "timestamp": "00:25",
+            "speaker": "Alex",
+            "section": "Introduction",
+            "text": "Hey everyone. Let’s be practical and look at use cases that are live today."
+          },
+          {
+            "timestamp": "00:40",
+            "speaker": "David",
+            "section": "Deep Dive",
+            "text": "Priya, diagnostics and triage assistants have been touted as the next big thing. Are they actually in use?"
+          },
+          {
+            "timestamp": "00:55",
+            "speaker": "Dr. Priya",
+            "section": "Deep Dive",
+            "text": "Yes. Some hospitals use AI for reading X-rays or flagging urgent cases. But it’s assistive, not replacing clinicians."
+          },
+          {
+            "timestamp": "01:15",
+            "speaker": "Alex",
+            "section": "Deep Dive",
+            "text": "And the regulatory barriers are huge. The FDA reviews these systems carefully, so full autonomy isn’t happening anytime soon."
+          },
+          {
+            "timestamp": "01:35",
+            "speaker": "David",
+            "section": "Examples",
+            "text": "So what’s a concrete example of something patients might see?"
+          },
+          {
+            "timestamp": "01:50",
+            "speaker": "Dr. Priya",
+            "section": "Examples",
+            "text": "Smart triage chatbots on hospital websites or apps, helping patients figure out next steps before seeing a doctor."
+          },
+          {
+            "timestamp": "02:20",
+            "speaker": "Alex",
+            "section": "Challenges",
+            "text": "Data privacy and bias are major hurdles. AI learns from existing clinical data, which may be skewed."
+          },
+          {
+            "timestamp": "02:50",
+            "speaker": "David",
+            "section": "Trends",
+            "text": "And yet, AI adoption continues. Why?"
+          },
+          {
+            "timestamp": "03:05",
+            "speaker": "Dr. Priya",
+            "section": "Trends",
+            "text": "Efficiency and clinician support. Hospitals want faster reads and fewer errors."
+          },
+          {
+            "timestamp": "03:30",
+            "speaker": "Alex",
+            "section": "Trends",
+            "text": "Plus, the pandemic accelerated digital health adoption, including AI tools."
+          },
+          {
+            "timestamp": "04:00",
+            "speaker": "David",
+            "section": "Future",
+            "text": "So what’s next? Are we talking predictive diagnostics?"
+          },
+          {
+            "timestamp": "04:15",
+            "speaker": "Dr. Priya",
+            "section": "Future",
+            "text": "Yes, AI copilots that suggest treatment plans, but a human will always make the final call."
+          },
+          {
+            "timestamp": "04:40",
+            "speaker": "Alex",
+            "section": "Future",
+            "text": "Interoperability is key. AI will work best when systems talk to each other securely."
+          },
+          {
+            "timestamp": "05:10",
+            "speaker": "David",
+            "section": "Closing",
+            "text": "Thanks, Priya and Alex. And thanks to our listeners. AI is powerful, but cautious optimism is the way forward."
+          }
+        ],
+        "duration_estimate": "05:10",
+        "section_count": 7,
+        "speaker_count": 3,
+        "word_count": 233
+      },
+      "summary": {
+        "episode_id": "ep002",
+        "summary_text": "# Summary: AI in Healthcare: Hype or Reality?\n\n**Step 1 & 2 Complete** - Full transcript analyzed\n\n**Core Problem Addressed**: Distinguishing between AI healthcare hype and actual clinical implementation\n**3 Most Valuable Insights**: \n1. AI is assistive, not autonomous, with FDA regulatory barriers preventing full replacement of clinicians\n2. Data bias and privacy are critical challenges since AI learns from potentially skewed clinical datasets\n3. Pandemic-accelerated adoption focuses on efficiency gains through triage chatbots and diagnostic support\n\n**Summary**:\n\nDavid Chen examines the gap between AI healthcare promises and current clinical reality with Dr. Priya Patel and Alex Moore, revealing that today's applications are narrowly focused on supporting, not replacing, human clinicians.\n\nThe conversation establishes that AI diagnostic tools—particularly X-ray readers and urgent case flagging systems—are deployed in hospitals, but operate under strict FDA oversight that prevents autonomous decision-making. Dr. Patel emphasizes these systems remain assistive, with regulatory barriers ensuring human oversight. Moore provides concrete examples patients encounter today: smart triage chatbots on hospital websites that guide next-step decisions before physician consultations.\n\nCritical challenges emerge around data integrity and equity. The guests explain AI systems learn from existing clinical datasets that may contain historical biases, creating privacy and fairness concerns. Despite these obstacles, adoption accelerates because hospitals seek efficiency gains and error reduction. The COVID-19 pandemic catalyzed digital health adoption, making AI tools more acceptable to both institutions and patients.\n\nLooking forward, the discussion points toward AI copilots that suggest treatment plans while preserving human final authority. Dr. Patel stresses that interoperability—enabling secure system communication—will determine AI's ultimate healthcare value. Chen concludes with measured optimism: AI holds power, but cautious, evidence-based implementation remains essential.\n\n**Word Count**: 223 words\n**Validation**: ✓ All sections covered ✓ All speakers represented ✓ Specific insights included ✓ No generalizations",
+        "word_count": 293,
+        "sections_covered": [
+          "Introduction",
+          "Deep Dive",
+          "Examples",
+          "Challenges",
+          "Trends",
+          "Future",
+          "Closing"
+        ],
+        "key_themes": [
+          "artificial intelligence",
+          "healthcare",
+          "technology",
+          "regulation"
+        ]
+      },
+      "key_notes": {
+        "episode_id": "ep002",
+        "takeaways": [
+          {
+            "text": "AI in healthcare is assistive, not autonomous—FDA regulations prevent full replacement of clinicians in the near term",
+            "relevance_score": 0.95
+          },
+          {
+            "text": "Clinical AI systems inherit bias from skewed historical data, making data privacy and equity major implementation hurdles",
+            "relevance_score": 0.92
+          },
+          {
+            "text": "Smart triage chatbots are live today, helping patients determine next steps before seeing doctors on hospital apps",
+            "relevance_score": 0.88
+          },
+          {
+            "text": "Hospitals adopt AI for efficiency gains—faster diagnostic reads and error reduction—accelerated by pandemic digital shifts",
+            "relevance_score": 0.85
+          },
+          {
+            "text": "Future AI healthcare success depends on secure interoperability—systems must communicate across platforms effectively",
+            "relevance_score": 0.82
+          }
+        ],
+        "quotes": [
+          {
+            "timestamp": "00:55",
+            "speaker": "Dr. Priya",
+            "text": "Some hospitals use AI for reading X-rays or flagging urgent cases. But it's assistive, not replacing clinicians.",
+            "context": "Discussion about AI diagnostics in healthcare",
+            "engagement_score": 0.72
+          },
+          {
+            "timestamp": "02:20",
+            "speaker": "Alex",
+            "text": "AI learns from existing clinical data, which may be skewed.",
+            "context": "Addressing bias concerns in healthcare AI",
+            "engagement_score": 0.78
+          },
+          {
+            "timestamp": "04:15",
+            "speaker": "Dr. Priya",
+            "text": "AI copilots that suggest treatment plans, but a human will always make the final call.",
+            "context": "Future of predictive diagnostics in healthcare",
+            "engagement_score": 0.75
+          }
+        ],
+        "topics": [
+          "ai-healthcare",
+          "medical-diagnostics",
+          "clinical-ai",
+          "healthcare-technology",
+          "fda-regulation",
+          "medical-bias",
+          "digital-health",
+          "patient-triage"
+        ]
+      },
+      "fact_checks": {
+        "episode_id": "ep002",
+        "fact_checks": [],
+        "total_claims": 0,
+        "verified_count": 0,
+        "unverified_count": 0
+      },
+      "metrics": {
+        "total_tokens_used": 15299,
+        "api_calls_made": 10,
+        "processing_time_seconds": 27.516974925994873,
+        "model_used": "anthropic/claude-4.5-sonnet"
+      },
+      "generated_at": "2025-10-28T06:47:17.359451"
+    },
+    {
+      "episode": {
+        "episode_id": "ep003",
+        "title": "Bootstrapping vs Fundraising — Which Path Wins?",
+        "host": "Lena Torres",
+        "guests": [
+          "Samir Gupta",
+          "Emily Rogers"
+        ],
+        "transcript": [
+          {
+            "timestamp": "00:00",
+            "speaker": "Lena",
+            "section": "Introduction",
+            "text": "Welcome to Founder Debates. I’m Lena Torres. Today we’re talking bootstrapping versus venture capital. Which path gives founders the edge?"
+          },
+          {
+            "timestamp": "00:20",
+            "speaker": "Samir",
+            "section": "Introduction",
+            "text": "Hi everyone. Excited to share my experiences bootstrapping companies from scratch."
+          },
+          {
+            "timestamp": "00:30",
+            "speaker": "Emily",
+            "section": "Introduction",
+            "text": "Hey! I’ve raised multiple funding rounds, so we’ll debate both perspectives."
+          },
+          {
+            "timestamp": "00:50",
+            "speaker": "Lena",
+            "section": "Deep Dive",
+            "text": "Samir, tell us why bootstrapping is still relevant today."
+          },
+          {
+            "timestamp": "01:05",
+            "speaker": "Samir",
+            "section": "Deep Dive",
+            "text": "Bootstrapping forces discipline. You focus on revenue and profitability early. No distractions from chasing VC metrics."
+          },
+          {
+            "timestamp": "01:30",
+            "speaker": "Emily",
+            "section": "Deep Dive",
+            "text": "True, but if your market is time-sensitive, VC money helps capture it before competitors."
+          },
+          {
+            "timestamp": "02:00",
+            "speaker": "Lena",
+            "section": "Examples",
+            "text": "Give concrete examples?"
+          },
+          {
+            "timestamp": "02:10",
+            "speaker": "Samir",
+            "section": "Examples",
+            "text": "I built a SaaS with no outside capital; we reached break-even in 18 months. We had total control."
+          },
+          {
+            "timestamp": "02:35",
+            "speaker": "Emily",
+            "section": "Examples",
+            "text": "Meanwhile, a fintech startup I advised raised seed to scale quickly and secured market leadership within two years."
+          },
+          {
+            "timestamp": "03:00",
+            "speaker": "Lena",
+            "section": "Framework",
+            "text": "So, how should founders decide?"
+          },
+          {
+            "timestamp": "03:15",
+            "speaker": "Samir",
+            "section": "Framework",
+            "text": "If your market is niche, defensible, and revenue-generating early, bootstrap."
+          },
+          {
+            "timestamp": "03:40",
+            "speaker": "Emily",
+            "section": "Framework",
+            "text": "If it’s a fast-moving, competitive space and you need talent or product scale fast, raise."
+          },
+          {
+            "timestamp": "04:10",
+            "speaker": "Lena",
+            "section": "Pros & Cons",
+            "text": "Interesting. And trade-offs?"
+          },
+          {
+            "timestamp": "04:25",
+            "speaker": "Samir",
+            "section": "Pros & Cons",
+            "text": "Bootstrapping: slower growth, full control, less risk from investors."
+          },
+          {
+            "timestamp": "04:40",
+            "speaker": "Emily",
+            "section": "Pros & Cons",
+            "text": "VC: faster growth, resources, but you dilute control and may face pressure for quick exits."
+          },
+          {
+            "timestamp": "05:10",
+            "speaker": "Lena",
+            "section": "Closing",
+            "text": "Thanks both. It seems the best path depends heavily on market type and founder priorities."
+          }
+        ],
+        "duration_estimate": "05:10",
+        "section_count": 6,
+        "speaker_count": 3,
+        "word_count": 192
+      },
+      "summary": {
+        "episode_id": "ep003",
+        "summary_text": "# Podcast Summary\n\n**Episode Details:**\n- Title: Bootstrapping vs Fundraising — Which Path Wins?\n- Host: Lena Torres\n- Guests: Samir Gupta, Emily Rogers\n\n---\n\nFounder Debates tackles the critical decision every entrepreneur faces: whether to bootstrap or raise venture capital, examining how market dynamics and founder priorities should drive this choice.\n\nThe episode opens with contrasting philosophies from two experienced founders. Samir Gupta champions bootstrapping for its enforced discipline, arguing it keeps founders focused on revenue and profitability rather than vanity metrics that please investors. Emily Rogers counters that in time-sensitive markets, VC funding provides the speed necessary to capture market share before competitors arrive. These aren't merely theoretical positions—Samir built a profitable SaaS company that reached break-even in 18 months while maintaining complete control, while Emily's fintech example demonstrates how seed funding enabled rapid scaling to market leadership within two years.\n\nThe conversation crystallizes into a practical decision framework: bootstrap when your market is niche, defensible, and capable of generating early revenue; pursue VC when operating in fast-moving, competitive spaces requiring immediate talent acquisition and product scaling. The trade-offs are stark and specific. Bootstrapping delivers slower growth paired with full control and reduced investor pressure, while VC funding accelerates growth and provides resources at the cost of diluted ownership and potential pressure for quick exits.\n\nTorres concludes that no universal answer exists—the optimal path hinges on market characteristics and what founders value most: control and sustainability versus speed and scale.\n\n**Word Count: 247**",
+        "word_count": 245,
+        "sections_covered": [
+          "Introduction",
+          "Deep Dive",
+          "Examples",
+          "Framework",
+          "Pros & Cons",
+          "Closing"
+        ],
+        "key_themes": [
+          "artificial intelligence",
+          "technology",
+          "business",
+          "leadership",
+          "entrepreneurship"
+        ]
+      },
+      "key_notes": {
+        "episode_id": "ep003",
+        "takeaways": [
+          {
+            "text": "Bootstrap for niche, defensible markets with early revenue; raise VC for fast-moving, competitive spaces requiring rapid talent and product scale",
+            "relevance_score": 1.0
+          },
+          {
+            "text": "Bootstrapping forces revenue and profitability focus early by eliminating distractions from chasing VC-specific metrics",
+            "relevance_score": 0.92
+          },
+          {
+            "text": "VC-funded startups can secure market leadership faster: one fintech achieved dominance within two years by scaling quickly with seed funding",
+            "relevance_score": 0.85
+          },
+          {
+            "text": "Bootstrapped SaaS companies can reach break-even in 18 months while maintaining total control and ownership",
+            "relevance_score": 0.78
+          },
+          {
+            "text": "The core trade-off: bootstrapping offers slower growth with full control versus VC's faster growth with diluted ownership and exit pressure",
+            "relevance_score": 0.75
+          }
+        ],
+        "quotes": [
+          {
+            "timestamp": "01:05",
+            "speaker": "Samir",
+            "text": "Bootstrapping forces discipline. You focus on revenue and profitability early. No distractions from chasing VC metrics.",
+            "context": "Explaining why bootstrapping remains relevant in today's startup ecosystem",
+            "engagement_score": 0.82
+          },
+          {
+            "timestamp": "03:15",
+            "speaker": "Samir",
+            "text": "If your market is niche, defensible, and revenue-generating early, bootstrap.",
+            "context": "Providing clear decision framework for founders choosing their funding path",
+            "engagement_score": 0.78
+          },
+          {
+            "timestamp": "03:40",
+            "speaker": "Emily",
+            "text": "If it's a fast-moving, competitive space and you need talent or product scale fast, raise.",
+            "context": "Counterpoint on when venture capital makes strategic sense",
+            "engagement_score": 0.75
+          },
+          {
+            "timestamp": "04:40",
+            "speaker": "Emily",
+            "text": "VC: faster growth, resources, but you dilute control and may face pressure for quick exits.",
+            "context": "Summarizing the core trade-offs of venture capital funding",
+            "engagement_score": 0.73
+          }
+        ],
+        "topics": [
+          "bootstrapping",
+          "venture-capital",
+          "startup-funding",
+          "founder-journey",
+          "saas-business",
+          "market-strategy",
+          "profitability",
+          "equity-dilution"
+        ]
+      },
+      "fact_checks": {
+        "episode_id": "ep003",
+        "fact_checks": [],
+        "total_claims": 0,
+        "verified_count": 0,
+        "unverified_count": 0
+      },
+      "metrics": {
+        "total_tokens_used": 22506,
+        "api_calls_made": 15,
+        "processing_time_seconds": 26.52614998817444,
+        "model_used": "anthropic/claude-4.5-sonnet"
+      },
+      "generated_at": "2025-10-28T06:47:43.891378"
+    }
+  ],
+  "total_episodes": 3,
+  "total_processing_time": 81.23777794837952,
+  "total_tokens": 45691,
+  "common_themes": [
+    "remote-work",
+    "async-communication",
+    "distributed-teams",
+    "workplace-productivity",
+    "remote-culture"
+  ],
+  "generated_at": "2025-10-28T06:47:43.916605"
+}

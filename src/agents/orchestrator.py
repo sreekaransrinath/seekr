@@ -21,7 +21,8 @@ class PodcastOrchestrator:
     def __init__(
         self,
         llm_gateway: LLMGateway,
-        output_dir: Optional[Path] = None,
+        reports_dir: Optional[Path] = None,
+        logs_dir: Optional[Path] = None,
         enable_reasoning_logs: bool = True,
         perplexity_key: Optional[str] = None,
         tavily_key: Optional[str] = None,
@@ -33,7 +34,8 @@ class PodcastOrchestrator:
 
         Args:
             llm_gateway: LLM gateway instance
-            output_dir: Output directory for results
+            reports_dir: Directory for report outputs
+            logs_dir: Directory for log outputs
             enable_reasoning_logs: Whether to enable reasoning logs
             perplexity_key: Perplexity API key for fact-checking
             tavily_key: Tavily API key for fact-checking
@@ -41,8 +43,8 @@ class PodcastOrchestrator:
             serpapi_key: SerpAPI key (optional)
         """
         self.llm = llm_gateway
-        self.output_dir = output_dir or Path("outputs")
-        self.output_dir.mkdir(parents=True, exist_ok=True)
+        self.reports_dir = reports_dir or Path("outputs")
+        self.logs_dir = logs_dir or Path("outputs")
 
         # Initialize engines
         self.parser = TranscriptParser()
@@ -57,7 +59,7 @@ class PodcastOrchestrator:
         )
 
         # Initialize reasoning logger
-        self.reasoning = ReasoningLogger(output_dir) if enable_reasoning_logs else None
+        self.reasoning = ReasoningLogger(logs_dir) if enable_reasoning_logs else None
 
     def process_episode(
         self,
@@ -238,12 +240,12 @@ class PodcastOrchestrator:
             output_prefix = report.episode.episode_id
 
         # Save JSON
-        json_path = self.output_dir / f"{output_prefix}_report.json"
+        json_path = self.reports_dir / f"{output_prefix}_report.json"
         with open(json_path, "w") as f:
             f.write(report.model_dump_json(indent=2))
 
         # Save Markdown
-        md_path = self.output_dir / f"{output_prefix}_report.md"
+        md_path = self.reports_dir / f"{output_prefix}_report.md"
         with open(md_path, "w") as f:
             f.write(report.to_markdown())
 

@@ -43,10 +43,6 @@ venv.bak/
 .env.local
 .env.*.local
 
-# Outputs
-outputs/
-*.log
-
 # Testing
 .pytest_cache/
 .coverage

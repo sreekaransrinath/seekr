@@ -32,15 +32,14 @@ class ReasoningEntry(BaseModel):
 class ReasoningLogger:
     """Logger for transparent agent reasoning and decision-making."""
 
-    def __init__(self, output_dir: Optional[Path] = None):
+    def __init__(self, logs_dir: Optional[Path] = None):
         """
         Initialize reasoning logger.
 
         Args:
-            output_dir: Directory to write reasoning logs
+            logs_dir: Directory to write reasoning logs
         """
-        self.output_dir = output_dir or Path("outputs")
-        self.output_dir.mkdir(parents=True, exist_ok=True)
+        self.logs_dir = logs_dir or Path("outputs")
 
         self.entries: list[ReasoningEntry] = []
         self.current_log_file: Optional[Path] = None
@@ -184,13 +183,12 @@ class ReasoningLogger:
         Save reasoning log to file.
 
         Args:
-            filename: Output filename (default: agent_reasoning_<timestamp>.log)
+            filename: Output filename (default: agent_reasoning.log)
         """
         if filename is None:
-            timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-            filename = f"agent_reasoning_{timestamp}.log"
+            filename = "agent_reasoning.log"
 
-        log_file = self.output_dir / filename
+        log_file = self.logs_dir / filename
 
         # Write as formatted text
         with open(log_file, "w") as f:
@@ -216,13 +214,12 @@ class ReasoningLogger:
         Save reasoning log as JSON.
 
         Args:
-            filename: Output filename
+            filename: Output filename (default: agent_reasoning.json)
         """
         if filename is None:
-            timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-            filename = f"agent_reasoning_{timestamp}.json"
+            filename = "agent_reasoning.json"
 
-        log_file = self.output_dir / filename
+        log_file = self.logs_dir / filename
 
         with open(log_file, "w") as f:
             json.dump(

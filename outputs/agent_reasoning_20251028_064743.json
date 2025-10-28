@@ -1,0 +1,435 @@
+[
+  {
+    "timestamp": "2025-10-28T06:46:22.645318",
+    "level": "planning",
+    "task": "Episode Processing Pipeline",
+    "reasoning": "Processing episode from ep001_remote_work.json. Will execute: Parse \u2192 Summarize \u2192 Extract \u2192 Fact-check \u2192 Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.",
+    "context": {
+      "episode_file": "sample_inputs/ep001_remote_work.json",
+      "model": "anthropic/claude-4.5-sonnet"
+    },
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:46:22.646708",
+    "level": "execution",
+    "task": "Parse Transcript",
+    "reasoning": "Loading and validating episode transcript JSON file",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:46:22.647963",
+    "level": "validation",
+    "task": "Parse Transcript",
+    "reasoning": "Transcript successfully parsed and validated",
+    "context": {
+      "episode_id": "ep001",
+      "title": "The Future of Remote Work",
+      "segment_count": 19,
+      "word_count": 326,
+      "section_count": 7,
+      "speaker_count": 2,
+      "sections": [
+        "Introduction",
+        "Deep Dive",
+        "Examples",
+        "Trends",
+        "Challenges",
+        "Predictions",
+        "Closing"
+      ],
+      "speakers": [
+        "Sarah",
+        "Mark"
+      ],
+      "duration_estimate": "06:00",
+      "validation_status": "passed"
+    },
+    "outcome": "Loaded 19 segments, 326 words"
+  },
+  {
+    "timestamp": "2025-10-28T06:46:22.649022",
+    "level": "execution",
+    "task": "Generate Summary",
+    "reasoning": "Generating 200-300 word summary covering all 7 sections. Using LLM to create engaging, informative summary.",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:46:33.599930",
+    "level": "validation",
+    "task": "Generate Summary",
+    "reasoning": "Summary generated and validated against word count requirements",
+    "context": {
+      "themes": [
+        "remote work",
+        "artificial intelligence",
+        "leadership"
+      ],
+      "sections": [
+        "Introduction",
+        "Deep Dive",
+        "Examples",
+        "Trends",
+        "Challenges",
+        "Predictions",
+        "Closing"
+      ]
+    },
+    "outcome": "Generated 266 word summary"
+  },
+  {
+    "timestamp": "2025-10-28T06:46:33.602607",
+    "level": "execution",
+    "task": "Extract Key Notes",
+    "reasoning": "Extracting 5 takeaways, 3-10 quotes, and 5-10 topic tags. Using LLM to identify most valuable and engaging content.",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:46:46.183275",
+    "level": "validation",
+    "task": "Extract Key Notes",
+    "reasoning": "Key notes extracted and validated",
+    "context": {
+      "topics": [
+        "remote-work",
+        "async-communication",
+        "distributed-teams",
+        "workplace-productivity",
+        "remote-culture",
+        "documentation",
+        "outcome-based-management",
+        "future-of-work",
+        "team-collaboration"
+      ]
+    },
+    "outcome": "Extracted 5 takeaways, 5 quotes, 9 topics"
+  },
+  {
+    "timestamp": "2025-10-28T06:46:46.185411",
+    "level": "execution",
+    "task": "Fact-Check Claims",
+    "reasoning": "Identifying factual claims and verifying using multiple search APIs. Will extract verifiable claims, query Perplexity/Tavily/Google Fact Check, and reconcile results across sources to determine consensus verification status.",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:46:49.838356",
+    "level": "validation",
+    "task": "Fact-Check Claims",
+    "reasoning": "No factual claims identified in this episode",
+    "context": {},
+    "outcome": "0 claims found - episode may focus on opinions/discussion rather than facts"
+  },
+  {
+    "timestamp": "2025-10-28T06:46:49.839471",
+    "level": "decision",
+    "task": "Episode Processing Complete",
+    "reasoning": "All processing stages completed successfully",
+    "context": {
+      "episode_id": "ep001",
+      "summary_words": 266,
+      "fact_checks": 0
+    },
+    "outcome": "Processed episode in 27.19s using 7886 tokens"
+  },
+  {
+    "timestamp": "2025-10-28T06:46:49.841181",
+    "level": "execution",
+    "task": "Save Report",
+    "reasoning": "Saving episode report in JSON and Markdown formats",
+    "context": {},
+    "outcome": "Saved to ep001_report.json and ep001_report.md"
+  },
+  {
+    "timestamp": "2025-10-28T06:46:49.842463",
+    "level": "planning",
+    "task": "Episode Processing Pipeline",
+    "reasoning": "Processing episode from ep002_ai_healthcare.json. Will execute: Parse \u2192 Summarize \u2192 Extract \u2192 Fact-check \u2192 Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.",
+    "context": {
+      "episode_file": "sample_inputs/ep002_ai_healthcare.json",
+      "model": "anthropic/claude-4.5-sonnet"
+    },
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:46:49.843677",
+    "level": "execution",
+    "task": "Parse Transcript",
+    "reasoning": "Loading and validating episode transcript JSON file",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:46:49.845619",
+    "level": "validation",
+    "task": "Parse Transcript",
+    "reasoning": "Transcript successfully parsed and validated",
+    "context": {
+      "episode_id": "ep002",
+      "title": "AI in Healthcare: Hype or Reality?",
+      "segment_count": 16,
+      "word_count": 233,
+      "section_count": 7,
+      "speaker_count": 3,
+      "sections": [
+        "Introduction",
+        "Deep Dive",
+        "Examples",
+        "Challenges",
+        "Trends",
+        "Future",
+        "Closing"
+      ],
+      "speakers": [
+        "David",
+        "Dr. Priya",
+        "Alex"
+      ],
+      "duration_estimate": "05:10",
+      "validation_status": "passed"
+    },
+    "outcome": "Loaded 16 segments, 233 words"
+  },
+  {
+    "timestamp": "2025-10-28T06:46:49.846872",
+    "level": "execution",
+    "task": "Generate Summary",
+    "reasoning": "Generating 200-300 word summary covering all 7 sections. Using LLM to create engaging, informative summary.",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:47:01.797592",
+    "level": "validation",
+    "task": "Generate Summary",
+    "reasoning": "Summary generated and validated against word count requirements",
+    "context": {
+      "themes": [
+        "artificial intelligence",
+        "healthcare",
+        "technology",
+        "regulation"
+      ],
+      "sections": [
+        "Introduction",
+        "Deep Dive",
+        "Examples",
+        "Challenges",
+        "Trends",
+        "Future",
+        "Closing"
+      ]
+    },
+    "outcome": "Generated 293 word summary"
+  },
+  {
+    "timestamp": "2025-10-28T06:47:01.800217",
+    "level": "execution",
+    "task": "Extract Key Notes",
+    "reasoning": "Extracting 5 takeaways, 3-10 quotes, and 5-10 topic tags. Using LLM to identify most valuable and engaging content.",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:47:13.536647",
+    "level": "validation",
+    "task": "Extract Key Notes",
+    "reasoning": "Key notes extracted and validated",
+    "context": {
+      "topics": [
+        "ai-healthcare",
+        "medical-diagnostics",
+        "clinical-ai",
+        "healthcare-technology",
+        "fda-regulation",
+        "medical-bias",
+        "digital-health",
+        "patient-triage"
+      ]
+    },
+    "outcome": "Extracted 5 takeaways, 3 quotes, 8 topics"
+  },
+  {
+    "timestamp": "2025-10-28T06:47:13.538429",
+    "level": "execution",
+    "task": "Fact-Check Claims",
+    "reasoning": "Identifying factual claims and verifying using multiple search APIs. Will extract verifiable claims, query Perplexity/Tavily/Google Fact Check, and reconcile results across sources to determine consensus verification status.",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:47:17.357525",
+    "level": "validation",
+    "task": "Fact-Check Claims",
+    "reasoning": "No factual claims identified in this episode",
+    "context": {},
+    "outcome": "0 claims found - episode may focus on opinions/discussion rather than facts"
+  },
+  {
+    "timestamp": "2025-10-28T06:47:17.359494",
+    "level": "decision",
+    "task": "Episode Processing Complete",
+    "reasoning": "All processing stages completed successfully",
+    "context": {
+      "episode_id": "ep002",
+      "summary_words": 293,
+      "fact_checks": 0
+    },
+    "outcome": "Processed episode in 27.52s using 15299 tokens"
+  },
+  {
+    "timestamp": "2025-10-28T06:47:17.362603",
+    "level": "execution",
+    "task": "Save Report",
+    "reasoning": "Saving episode report in JSON and Markdown formats",
+    "context": {},
+    "outcome": "Saved to ep002_report.json and ep002_report.md"
+  },
+  {
+    "timestamp": "2025-10-28T06:47:17.365205",
+    "level": "planning",
+    "task": "Episode Processing Pipeline",
+    "reasoning": "Processing episode from ep003_bootstrapping.json. Will execute: Parse \u2192 Summarize \u2192 Extract \u2192 Fact-check \u2192 Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.",
+    "context": {
+      "episode_file": "sample_inputs/ep003_bootstrapping.json",
+      "model": "anthropic/claude-4.5-sonnet"
+    },
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:47:17.366972",
+    "level": "execution",
+    "task": "Parse Transcript",
+    "reasoning": "Loading and validating episode transcript JSON file",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:47:17.368976",
+    "level": "validation",
+    "task": "Parse Transcript",
+    "reasoning": "Transcript successfully parsed and validated",
+    "context": {
+      "episode_id": "ep003",
+      "title": "Bootstrapping vs Fundraising \u2014 Which Path Wins?",
+      "segment_count": 16,
+      "word_count": 192,
+      "section_count": 6,
+      "speaker_count": 3,
+      "sections": [
+        "Introduction",
+        "Deep Dive",
+        "Examples",
+        "Framework",
+        "Pros & Cons",
+        "Closing"
+      ],
+      "speakers": [
+        "Samir",
+        "Emily",
+        "Lena"
+      ],
+      "duration_estimate": "05:10",
+      "validation_status": "passed"
+    },
+    "outcome": "Loaded 16 segments, 192 words"
+  },
+  {
+    "timestamp": "2025-10-28T06:47:17.371009",
+    "level": "execution",
+    "task": "Generate Summary",
+    "reasoning": "Generating 200-300 word summary covering all 6 sections. Using LLM to create engaging, informative summary.",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:47:26.372574",
+    "level": "validation",
+    "task": "Generate Summary",
+    "reasoning": "Summary generated and validated against word count requirements",
+    "context": {
+      "themes": [
+        "artificial intelligence",
+        "technology",
+        "business",
+        "leadership",
+        "entrepreneurship"
+      ],
+      "sections": [
+        "Introduction",
+        "Deep Dive",
+        "Examples",
+        "Framework",
+        "Pros & Cons",
+        "Closing"
+      ]
+    },
+    "outcome": "Generated 245 word summary"
+  },
+  {
+    "timestamp": "2025-10-28T06:47:26.374632",
+    "level": "execution",
+    "task": "Extract Key Notes",
+    "reasoning": "Extracting 5 takeaways, 3-10 quotes, and 5-10 topic tags. Using LLM to identify most valuable and engaging content.",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:47:40.285589",
+    "level": "validation",
+    "task": "Extract Key Notes",
+    "reasoning": "Key notes extracted and validated",
+    "context": {
+      "topics": [
+        "bootstrapping",
+        "venture-capital",
+        "startup-funding",
+        "founder-journey",
+        "saas-business",
+        "market-strategy",
+        "profitability",
+        "equity-dilution"
+      ]
+    },
+    "outcome": "Extracted 5 takeaways, 4 quotes, 8 topics"
+  },
+  {
+    "timestamp": "2025-10-28T06:47:40.291718",
+    "level": "execution",
+    "task": "Fact-Check Claims",
+    "reasoning": "Identifying factual claims and verifying using multiple search APIs. Will extract verifiable claims, query Perplexity/Tavily/Google Fact Check, and reconcile results across sources to determine consensus verification status.",
+    "context": {},
+    "outcome": null
+  },
+  {
+    "timestamp": "2025-10-28T06:47:43.887583",
+    "level": "validation",
+    "task": "Fact-Check Claims",
+    "reasoning": "No factual claims identified in this episode",
+    "context": {},
+    "outcome": "0 claims found - episode may focus on opinions/discussion rather than facts"
+  },
+  {
+    "timestamp": "2025-10-28T06:47:43.891407",
+    "level": "decision",
+    "task": "Episode Processing Complete",
+    "reasoning": "All processing stages completed successfully",
+    "context": {
+      "episode_id": "ep003",
+      "summary_words": 245,
+      "fact_checks": 0
+    },
+    "outcome": "Processed episode in 26.53s using 22506 tokens"
+  },
+  {
+    "timestamp": "2025-10-28T06:47:43.900658",
+    "level": "execution",
+    "task": "Save Report",
+    "reasoning": "Saving episode report in JSON and Markdown formats",
+    "context": {},
+    "outcome": "Saved to ep003_report.json and ep003_report.md"
+  }
+]
