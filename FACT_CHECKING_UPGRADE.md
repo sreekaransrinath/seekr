@@ -162,7 +162,7 @@ google-api-python-client==2.158.0
 **Purpose**: AI-powered search with citations
 
 **Implementation**:
-- Uses chat completion endpoint with `llama-3.1-sonar-small-128k-online` model
+- Uses chat completion endpoint with `sonar-pro` model
 - Returns AI-generated answer + citations
 - Provides comprehensive context for verification
 
@@ -171,7 +171,7 @@ google-api-python-client==2.158.0
 response = client.post(
     "https://api.perplexity.ai/chat/completions",
     json={
-        "model": "llama-3.1-sonar-small-128k-online",
+        "model": "sonar-pro",
         "messages": [
             {"role": "user", "content": "Fact-check: NASA Mars mission launches 2026"}
         ],

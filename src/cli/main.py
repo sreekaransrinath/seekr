@@ -42,8 +42,8 @@ def cli():
 @click.option(
     "--model",
     "-m",
-    default="anthropic/claude-3.5-sonnet",
-    help="LLM model to use (default: anthropic/claude-3.5-sonnet)",
+    default="anthropic/claude-4.5-sonnet",
+    help="LLM model to use (default: anthropic/claude-4.5-sonnet)",
 )
 @click.option(
     "--output-dir",
@@ -132,6 +132,41 @@ def process(
         output_dir=output_dir,
         enable_reasoning_logs=not no_reasoning,
     )
+
+    # Display fact-checking API configuration status
+    console.print("[bold]Fact-Checking Configuration:[/bold]")
+
+    fact_check_available = []
+    fact_check_unavailable = []
+
+    if os.getenv("PERPLEXITY_API_KEY"):
+        fact_check_available.append("Perplexity")
+    else:
+        fact_check_unavailable.append("Perplexity")
+
+    if os.getenv("TAVILY_API_KEY"):
+        fact_check_available.append("Tavily")
+    else:
+        fact_check_unavailable.append("Tavily")
+
+    if os.getenv("GOOGLE_FACT_CHECK_API_KEY"):
+        fact_check_available.append("Google Fact Check")
+    else:
+        fact_check_unavailable.append("Google Fact Check")
+
+    if os.getenv("SERPAPI_KEY"):
+        fact_check_available.append("SerpAPI")
+    else:
+        fact_check_unavailable.append("SerpAPI")
+
+    if fact_check_available:
+        console.print(f"  ✓ APIs available: [green]{', '.join(fact_check_available)}[/green]")
+    if fact_check_unavailable:
+        console.print(f"  ✗ APIs not configured: [dim]{', '.join(fact_check_unavailable)}[/dim]")
+    if not fact_check_available:
+        console.print("  [yellow]⚠ No fact-checking APIs configured - claims will not be verified[/yellow]")
+
+    console.print("")
 
     # Process episodes
     reports = []
@@ -262,7 +297,7 @@ def info():
     console.print("  • JSON and Markdown output formats\n")
 
     console.print("[bold]Popular Models (via OpenRouter):[/bold]")
-    console.print("  • anthropic/claude-3.5-sonnet (default, recommended)")
+    console.print("  • anthropic/claude-4.5-sonnet (default, recommended)")
     console.print("  • anthropic/claude-3-opus")
     console.print("  • openai/gpt-4o")
     console.print("  • openai/gpt-4-turbo")

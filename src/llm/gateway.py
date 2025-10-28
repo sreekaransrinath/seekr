@@ -24,7 +24,7 @@ class LLMGateway:
     def __init__(
         self,
         api_key: Optional[str] = None,
-        default_model: str = "anthropic/claude-3.5-sonnet",
+        default_model: str = "anthropic/claude-4.5-sonnet",
         max_tokens: int = 4096,
         temperature: float = 0.7,
     ):

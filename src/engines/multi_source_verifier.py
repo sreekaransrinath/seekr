@@ -37,11 +37,43 @@ class MultiSourceVerifier:
         """
         self.llm = llm_gateway
 
-        # Initialize API clients
-        self.perplexity = PerplexityClient(perplexity_key)
-        self.tavily = TavilyClient(tavily_key)
-        self.google_factcheck = GoogleFactCheckClient(google_key)
+        # Initialize API clients conditionally (only if keys provided)
+        self.perplexity = PerplexityClient(perplexity_key) if perplexity_key else None
+        self.tavily = TavilyClient(tavily_key) if tavily_key else None
+        self.google_factcheck = GoogleFactCheckClient(google_key) if google_key else None
         self.serpapi = SerpAPIClient(serpapi_key) if serpapi_key else None
+
+        # Report API initialization status
+        available_apis = []
+        unavailable_apis = []
+
+        if self.perplexity:
+            available_apis.append("Perplexity")
+        else:
+            unavailable_apis.append("Perplexity (no API key)")
+
+        if self.tavily:
+            available_apis.append("Tavily")
+        else:
+            unavailable_apis.append("Tavily (no API key)")
+
+        if self.google_factcheck:
+            available_apis.append("Google Fact Check")
+        else:
+            unavailable_apis.append("Google Fact Check (no API key)")
+
+        if self.serpapi:
+            available_apis.append("SerpAPI")
+        else:
+            unavailable_apis.append("SerpAPI (no API key)")
+
+        # Print initialization status
+        if available_apis:
+            print("✓ Fact-checking APIs available:", ", ".join(available_apis))
+        if unavailable_apis:
+            print("✗ APIs not available:", ", ".join(unavailable_apis))
+        if not available_apis:
+            print("⚠ WARNING: No fact-checking API keys configured - all claims will be marked UNVERIFIABLE")
 
     def verify_claim(self, claim: FactualClaim) -> FactCheckResult:
         """
@@ -96,15 +128,18 @@ class MultiSourceVerifier:
         """
         all_results = []
 
-        # Search each API
-        perplexity_results = self.perplexity.search(query)
-        all_results.extend(perplexity_results)
+        # Search each API only if initialized (has API key)
+        if self.perplexity:
+            perplexity_results = self.perplexity.search(query)
+            all_results.extend(perplexity_results)
 
-        tavily_results = self.tavily.search(query)
-        all_results.extend(tavily_results)
+        if self.tavily:
+            tavily_results = self.tavily.search(query)
+            all_results.extend(tavily_results)
 
-        google_results = self.google_factcheck.search(query)
-        all_results.extend(google_results)
+        if self.google_factcheck:
+            google_results = self.google_factcheck.search(query)
+            all_results.extend(google_results)
 
         if self.serpapi:
             serpapi_results = self.serpapi.search(query)
@@ -246,8 +281,11 @@ Analyze all sources and return JSON with verification_status, confidence_score, 
         return sources
 
     def close(self):
-        """Close all API clients."""
-        self.perplexity.close()
-        self.google_factcheck.close()
+        """Close all API clients that were initialized."""
+        if self.perplexity:
+            self.perplexity.close()
+        if self.google_factcheck:
+            self.google_factcheck.close()
         if self.serpapi:
             self.serpapi.close()
+        # Note: TavilyClient doesn't have a close() method

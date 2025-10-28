@@ -29,7 +29,7 @@ class PromptTemplates:
         system_prompt = """You are an expert podcast content analyst specializing in creating precise, comprehensive summaries for content marketing and distribution.
 
 ## Your Expertise
-- 10+ years analyzing podcast content across business, technology, and educational domains
+- Analyzing podcast content across business, technology, and educational domains
 - Deep understanding of narrative structures and information hierarchy
 - Specialist in distilling complex discussions into accessible insights
 
@@ -65,13 +65,13 @@ Use this step-by-step approach for EVERY summary:
         guests_str = ", ".join(guests) if guests else "No guests"
         sections_str = " → ".join(sections) if sections else "No sections"
 
-        user_prompt = f"""Create a precise 200-300 word summary following this exact structure:
+        user_prompt = """Create a precise 200-300 word summary following this exact structure:
 
 **Episode Details**:
-- Title: {episode_title}
-- Host: {host}
-- Guests: {guests_str}
-- Section Flow: {sections_str}
+- Title: """ + episode_title + """
+- Host: """ + host + """
+- Guests: """ + guests_str + """
+- Section Flow: """ + sections_str + """
 
 **Step 1**: Read the ENTIRE transcript first. Do not start writing until you've read everything.
 
@@ -87,13 +87,13 @@ Use this step-by-step approach for EVERY summary:
 [Closing: 1 sentence on the main conclusion or call-to-action]
 
 **Step 4**: Validate your summary:
-✓ Covers all sections: {sections_str}
-✓ Includes perspectives from: {host} and {guests_str}
-✓ Contains specific insights, not generalizations
-✓ 200-300 words exactly
+Make sure it Covers all sections: """ + sections_str + """
+Make sure it Includes perspectives from: """ + host + """ and """ + guests_str + """
+Make sure it Contains specific insights, not generalizations
+Make sure it is 200-300 words exactly
 
 **Full Transcript**:
-{transcript_text}
+""" + transcript_text + """
 
 ## Example of GOOD summary structure:
 "In this episode, [Host] explores [specific topic] with [Guest], revealing [key insight]. The conversation begins with [Section 1 main point], where [specific example or data]. Moving to [Section 2], they discuss [specific challenge/solution]. The discussion culminates in [final section insight]. Key takeaway: [specific actionable insight]."
@@ -144,16 +144,16 @@ Apply this rigorous process for identifying takeaways:
    - Should not require additional context
 
 ## Quality Markers
-✓ Specific, not generic
-✓ Actionable, not just informational
-✓ Evidence-based, not opinion
-✓ Clear without additional context
+Make sure it is Specific, not generic
+Make sure it is Actionable, not just informational
+Make sure it is Evidence-based, not opinion
+Make sure it is Clear without additional context
 
 ## Red Flags to Avoid
-✗ Vague statements like "X is important"
-✗ Obvious insights everyone knows
-✗ Takeaways that just summarize
-✗ Marketing language or hype
+Avoid Vague statements like "X is important"
+Avoid Obvious insights everyone knows
+Avoid Takeaways that just summarize
+Avoid Marketing language or hype
 
 Respond with valid JSON in this format:
 {
@@ -164,9 +164,9 @@ Respond with valid JSON in this format:
   ]
 }"""
 
-        user_prompt = f"""Extract EXACTLY 5 key takeaways using this systematic approach:
+        user_prompt = """Extract EXACTLY 5 key takeaways using this systematic approach:
 
-**Episode**: "{episode_title}"
+**Episode**: \"""" + episode_title + """\"
 
 **Phase 1 - Identification**:
 Read the entire transcript and mark passages that contain:
@@ -194,7 +194,7 @@ For each selected takeaway:
 4. Verify it's actually in the transcript
 
 **Transcript**:
-{transcript_text}
+""" + transcript_text + """
 
 ## Example of GOOD takeaways:
 - "Async-first culture requires comprehensive documentation, not just remote tools" (specific, actionable)
@@ -253,11 +253,11 @@ Calculate composite score:
 **Acceptable (0.5-0.6)**: Useful but not remarkable
 
 ## Avoid These Quote Types
-✗ Inside jokes or references requiring context
-✗ Incomplete thoughts or fragments
-✗ Generic platitudes everyone says
-✗ Highly technical without explanation
-✗ Negative without constructive element
+Avoid Inside jokes or references requiring context
+Avoid Incomplete thoughts or fragments
+Avoid Generic platitudes everyone says
+Avoid Highly technical without explanation
+Avoid Negative without constructive element
 
 Respond with valid JSON in this format:
 {
@@ -273,9 +273,9 @@ Respond with valid JSON in this format:
   ]
 }"""
 
-        user_prompt = f"""Extract 3-10 highly shareable quotes using this systematic process:
+        user_prompt = """Extract 3-10 highly shareable quotes using this systematic process:
 
-**Episode**: "{episode_title}"
+**Episode**: \"""" + episode_title + """\"
 
 **Step 1 - Initial Scan**:
 Read the ENTIRE transcript and flag passages where speakers:
@@ -301,7 +301,7 @@ For each flagged passage, score these factors (0.0-1.0):
 - Verify quotes are verbatim from transcript
 
 **Transcript with Timestamps**:
-{transcript_with_timestamps}
+""" + transcript_with_timestamps + """
 
 **Example of HIGH engagement quote**:
 "Being remote doesn't just mean a location; it means structured processes and trust" - Clear, memorable, challenges assumptions
@@ -355,30 +355,30 @@ Include tags at different levels:
 - Maximum 3 words per tag
 
 ## Quality Markers
-✓ Reflects actual content, not aspirational topics
-✓ Useful for content discovery
-✓ SEO-friendly terminology
-✓ Mix of trending and evergreen terms
+Make sure it Reflects actual content, not aspirational topics
+Make sure it is Useful for content discovery
+Make sure it is SEO-friendly terminology
+Make sure it is a Mix of trending and evergreen terms
 
 ## Avoid
-✗ Generic tags like "podcast" or "discussion"
-✗ Speaker names as tags
-✗ Overly specific tags no one searches
-✗ Redundant variations of same concept
+Avoid Generic tags like "podcast" or "discussion"
+Avoid Speaker names as tags
+Avoid Overly specific tags no one searches
+Avoid Redundant variations of same concept
 
 Respond with valid JSON in this format:
 {
   "topics": ["topic-1", "topic-2", "topic-3", ...]
 }"""
 
-        user_prompt = f"""Generate 5-10 topic tags using this systematic approach:
+        user_prompt = """Generate 5-10 topic tags using this systematic approach:
 
-**Title**: {episode_title}
+**Title**: """ + episode_title + """
 
-**Summary**: {summary}
+**Summary**: """ + summary + """
 
 **Transcript** (first 1000 chars):
-{transcript_text[:1000]}...
+""" + transcript_text[:1000] + """...
 
 **Step 1 - Core Topic Identification**:
 Identify 2-3 main topics that dominate the discussion.
@@ -390,10 +390,10 @@ Find 3-5 supporting topics that are substantially discussed.
 Add 2-3 trending or searchable terms related to the content.
 
 **Step 4 - Validation**:
-✓ Each tag appears meaningfully in content
-✓ Tags are formatted correctly (lowercase, hyphenated)
-✓ Good mix of broad and specific
-✓ All are searchable terms
+Validate that Each tag appears meaningfully in content
+Validate that Tags are formatted correctly (lowercase, hyphenated)
+Validate that it is a Good mix of broad and specific
+Validate that they All are searchable terms
 
 **Example GOOD tags for a remote work episode**:
 ["remote-work", "async-communication", "distributed-teams", "workplace-culture", "productivity", "documentation"]
@@ -422,18 +422,42 @@ Return JSON with 5-10 well-chosen topic tags."""
         """
         system_prompt = """You are a precision fact-checking specialist trained in identifying verifiable claims in conversational content.
 
+## Critical Rule: Self-Contained Claims
+Every extracted claim MUST be self-contained and verifiable without additional context. 
+- Replace pronouns with specific references
+- Include the subject being discussed
+- Expand "this/that/these" to actual entities
+- Merge related statements if needed for completeness
+
 ## Claim Identification Protocol
 
-### Classification Framework
-Categorize statements into these types:
+### Reference Resolution Rules
+**BEFORE extracting any claim**, resolve ALL references:
+- "They" → "GitLab, Automattic, and Doist"
+- "These systems" → "AI systems for reading X-rays"
+- "It" → "The Mars mission"
+- "This approach" → "async-first remote work culture"
 
+### Self-Containment Test
+Ask: "If I showed this claim to someone who hadn't heard the podcast, would they know exactly what to verify?"
+- BAD: "They launched in 2026"
+- GOOD: "NASA's Mars Sample Return mission launches in 2026"
+- BAD: "The FDA reviews these systems carefully"
+- GOOD: "The FDA reviews AI systems for medical diagnosis carefully"
+
+### Context Expansion Rules
+1. **Look Back**: Check 2-3 sentences before for subject definition
+2. **Combine if Necessary**: Merge statements if they form one complete claim
+3. **Include Qualifiers**: Add relevant context that affects verification
+
+### Classification Framework
 **FACTUAL CLAIMS** (Extract these):
-- Statistical: Numbers, percentages, quantities
-- Temporal: Dates, timelines, durations
-- Entity: Companies, people, organizations
-- Scientific: Research findings, technical facts
-- Regulatory: Laws, policies, regulations
-- Historical: Past events, established facts
+- Statistical: Numbers, percentages, quantities WITH their subjects
+- Temporal: Dates, timelines WITH what they refer to
+- Entity: Complete statements about companies/people/organizations
+- Scientific: Research findings WITH the study/field specified
+- Regulatory: Laws/policies WITH the jurisdiction/agency
+- Historical: Past events WITH full context
 
 **NON-FACTUAL** (Skip these):
 - Opinions: "I think", "I believe", "In my view"
@@ -442,20 +466,12 @@ Categorize statements into these types:
 - Generalizations: "Most people", "Usually", "Often"
 - Personal experiences: "I found", "In my case"
 
-### Verification Potential Assessment
-Rate each claim's verifiability (1-5):
-5 = Easily verifiable (dates, statistics)
-4 = Verifiable with research (company facts)
-3 = Partially verifiable (trends, patterns)
-2 = Difficult to verify (private information)
-1 = Unverifiable (future predictions)
-
-### Extraction Rules
-1. Preserve exact wording from transcript
-2. Include sufficient context for understanding
-3. Note confidence indicators ("approximately", "around", "nearly")
-4. Identify claim dependencies (if X assumes Y)
-5. Mark claims that reference specific sources
+### Extraction Process
+1. Identify potential claim
+2. Resolve ALL references and pronouns
+3. Test for self-containment
+4. Include necessary context
+5. Verify claim is complete and verifiable
 
 Categorize each claim by type: statistic, date, company, technology, prediction, regulation, or other.
 
@@ -463,64 +479,98 @@ Respond with valid JSON in this format:
 {
   "claims": [
     {
-      "claim_text": "The specific claim",
+      "claim_text": "The complete, self-contained claim",
       "claim_type": "statistic",
       "speaker": "Speaker Name",
       "timestamp": "HH:MM:SS",
-      "context": "Brief surrounding context"
+      "context": "Additional context if helpful",
+      "original_statement": "The actual words spoken"
     },
     ...
   ]
 }"""
 
         # Use string concatenation to avoid f-string issues with JSON in transcript
-        user_prompt = """Identify 5-10 factual claims from this episode that can be fact-checked: \"""" + episode_title + """\"
+        user_prompt = """Identify all factual claims from this episode that can be fact-checked: \"""" + episode_title + """\"
 
-**Phase 1 - Statement Classification**:
-Read each statement and classify as:
-[ ] Factual claim - Contains verifiable information
-[ ] Opinion - Subjective viewpoint
-[ ] Prediction - Future speculation
-[ ] Experience - Personal anecdote
+**CRITICAL FIRST STEP - Reference Resolution**:
+Before extracting claims, scan the transcript and resolve all references:
+- What does "they/them" refer to in each case?
+- What does "this/that/these/those" refer to?
+- What are the full names of abbreviated entities?
+- What is the complete context for each statement?
 
-**Phase 2 - Factual Claim Analysis**:
-For each factual claim, determine:
+**Phase 1 - Claim Identification with Context**:
+For each potential factual claim:
 
-1. **Claim Type**:
-   - statistic (numbers, percentages)
-   - date (specific times, years)
-   - company (organization facts)
-   - technology (technical facts)
-   - regulation (laws, policies)
-   - other (specify)
+1. **Identify the Raw Statement**: Find the exact words
+2. **Resolve References**: 
+   - What does each pronoun refer to?
+   - What is "this/these" referring to?
+   - Look back 2-3 sentences for the antecedent
+3. **Create Self-Contained Claim**:
+   - Replace all pronouns with specific nouns
+   - Include the full subject being discussed
+   - Add necessary context for understanding
+4. **Verify Completeness**:
+   - Would someone unfamiliar with the episode understand what to verify?
+   - Is all necessary information included?
 
-2. **Specificity Level**:
-   - Exact: "launched on March 15, 2024"
-   - Approximate: "around 50% of users"
-   - Range: "between 100-200 employees"
-
-3. **Context Extraction**:
-   - Speaker who made the claim
-   - Timestamp of claim
-   - Surrounding context (1-2 sentences)
-   - Any qualifiers used
+**Phase 2 - Classification and Extraction**:
+For each self-contained claim:
+1. Classify type (statistic, date, company, etc.)
+2. Note speaker and timestamp
+3. Include both the original statement and resolved version
 
 **Transcript**:
 """ + transcript_text + """
 
-**Example GOOD claim identification**:
-{
-  "claim_text": "GitLab has written handbooks for everything",
+**Example of GOOD claim extraction**:
+
+Original statement: "They've literally written handbooks for everything"
+Previous context: "Well, look at GitLab, Automattic, and Doist."
+
+GOOD extraction:
+{{
+  "claim_text": "GitLab, Automattic, and Doist have written handbooks for everything",
   "claim_type": "company",
   "speaker": "Mark",
   "timestamp": "01:20",
-  "context": "Discussing companies with strong remote culture"
-}
+  "context": "Discussing companies with strong remote culture documentation practices",
+  "original_statement": "They've literally written handbooks for everything"
+}}
 
-**Example BAD (opinion, not claim)**:
-"Remote work is better than office work" - This is opinion, not factual
+**Example of BAD claim extraction**:
 
-Return JSON with verifiable factual claims."""
+BAD (missing context):
+{{
+  "claim_text": "The FDA reviews these systems carefully",
+  "claim_type": "regulation",
+  ...
+}}
+
+This is BAD because we don't know what "these systems" refers to.
+
+GOOD (with resolved reference):
+{{
+  "claim_text": "The FDA reviews AI systems for medical diagnosis (like X-ray reading) carefully",
+  "claim_type": "regulation",
+  "speaker": "Alex",
+  "timestamp": "01:15", 
+  "context": "Following discussion of hospitals using AI for reading X-rays",
+  "original_statement": "The FDA reviews these systems carefully"
+}}
+
+**Another Example**:
+
+Conversation snippet:
+"Sarah: So NASA recently announced something about a new Mars mission.
+Guest: Yes, it's launching in early 2026"
+
+BAD extraction: "It's launching in early 2026"
+GOOD extraction: "NASA's new Mars mission is launching in early 2026"
+
+Return JSON with self-contained, verifiable factual claims."""
 
         return system_prompt, user_prompt
 
@@ -603,15 +653,15 @@ Respond with valid JSON in this format:
 }"""
 
         kb_str = "\n".join([
-            f"- {item.get('title', 'Unknown')}: {item.get('excerpt', item.get('content', ''))}"
+            "- " + item.get('title', 'Unknown') + ": " + item.get('excerpt', item.get('content', ''))
             for item in knowledge_base_results
         ]) if knowledge_base_results else "No knowledge base results found"
 
-        user_prompt = f"""Verify this factual claim using systematic fact-checking:
+        user_prompt = """Verify this factual claim using systematic fact-checking:
 
-**Claim**: "{claim_text}"
-**Type**: {claim_type}
-**Context**: {context}
+**Claim**: \"""" + claim_text + """\"
+**Type**: """ + claim_type + """
+**Context**: """ + (context or "No additional context") + """
 
 **Step 1 - Claim Decomposition**:
 Break down the claim into verifiable components:
@@ -622,7 +672,7 @@ Break down the claim into verifiable components:
 **Step 2 - Source Analysis**:
 
 **Knowledge Base Results**:
-{kb_str}
+""" + kb_str + """
 
 For each source, evaluate:
 1. Does it directly address the claim?
@@ -693,14 +743,14 @@ Your decision should include:
 
 Respond with valid JSON explaining your reasoning and decisions."""
 
-        context_str = "\n".join([f"- {k}: {v}" for k, v in context.items()])
+        context_str = "\n".join(["- " + str(k) + ": " + str(v) for k, v in context.items()])
 
-        user_prompt = f"""Make optimal processing decisions for this task:
+        user_prompt = """Make optimal processing decisions for this task:
 
-**Task**: {task_description}
+**Task**: """ + task_description + """
 
 **Context**:
-{context_str}
+""" + context_str + """
 
 **Step 1 - Assess Situation**:
 - What are the constraints?
