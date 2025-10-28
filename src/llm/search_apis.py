@@ -101,7 +101,7 @@ class PerplexityClient:
             return results
 
         except Exception as e:
-            print(f"Perplexity search error: {e}")
+            print("Perplexity search error:", str(e))
             return []
 
     def close(self):
@@ -168,7 +168,7 @@ class TavilyClient:
             return results
 
         except Exception as e:
-            print(f"Tavily search error: {e}")
+            print("Tavily search error:", str(e))
             return []
 
 
@@ -230,7 +230,7 @@ class GoogleFactCheckClient:
             return results
 
         except Exception as e:
-            print(f"Google Fact Check search error: {e}")
+            print("Google Fact Check search error:", str(e))
             return []
 
     def close(self):
@@ -292,7 +292,7 @@ class SerpAPIClient:
             return results
 
         except Exception as e:
-            print(f"SerpAPI search error: {e}")
+            print("SerpAPI search error:", str(e))
             return []
 
     def close(self):

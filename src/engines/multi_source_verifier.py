@@ -153,14 +153,15 @@ Respond with valid JSON:
   "explanation": "Your explanation here"
 }"""
 
-        user_prompt = f"""Verify this claim using the provided sources:
+        # Build prompt without f-string to avoid issues with JSON braces in claim text or context
+        user_prompt = """Verify this claim using the provided sources:
 
-**Claim**: {claim.claim_text}
-**Type**: {claim.claim_type.value}
-**Context**: {claim.context or 'No additional context'}
+**Claim**: """ + claim.claim_text + """
+**Type**: """ + claim.claim_type.value + """
+**Context**: """ + (claim.context or 'No additional context') + """
 
 **Sources from Multiple APIs**:
-{context}
+""" + context + """
 
 Analyze all sources and return JSON with verification_status, confidence_score, and explanation."""
 
@@ -188,11 +189,11 @@ Analyze all sources and return JSON with verification_status, confidence_score, 
             return status, confidence, explanation
 
         except Exception as e:
-            print(f"Reconciliation error: {e}")
+            print("Reconciliation error:", str(e))
             return (
                 VerificationStatus.UNVERIFIABLE,
                 0.3,
-                f"Error during reconciliation: {str(e)}",
+                "Error during reconciliation: " + str(e),
             )
 
     def _build_reconciliation_context(self, results: List[SearchResult]) -> str:

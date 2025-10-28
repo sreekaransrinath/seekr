@@ -128,7 +128,7 @@ class FactCheckEngine:
             return claims
 
         except Exception as e:
-            print(f"Claim identification error: {e}")
+            print("Claim identification error:", str(e))
             # Return empty list on error - no placeholders
             return []
 

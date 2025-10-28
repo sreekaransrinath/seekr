@@ -203,7 +203,7 @@ class LLMGateway:
 
             return json.loads(content)
         except json.JSONDecodeError as e:
-            raise Exception(f"Failed to parse JSON response: {e}\nResponse: {response.content[:500]}")
+            raise Exception("Failed to parse JSON response: " + str(e) + "\nResponse: " + response.content[:500])
 
     def get_stats(self) -> dict:
         """Get usage statistics."""

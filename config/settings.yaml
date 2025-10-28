@@ -1,5 +1,5 @@
 llm:
-  default_model: "anthropic/claude-3.5-sonnet"
+  default_model: "anthropic/claude-4.5-sonnet"
   max_tokens: 4096
   temperature: 0.7
   top_p: 1.0
