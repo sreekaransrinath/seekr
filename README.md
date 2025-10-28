@@ -8,7 +8,7 @@ An AI-powered agentic system for automated podcast content processing, designed 
 - **Key Takeaways Extraction**: Identifies top 5 actionable insights from each episode
 - **Quote Mining**: Extracts 3-10 notable, shareable quotes with timestamps
 - **Topic Tagging**: Auto-generates 5-10 SEO-optimized topic tags
-- **Fact-Checking**: Verifies factual claims against a knowledge base
+- **Multi-Source Fact-Checking**: Verifies claims using Perplexity, Tavily, Google Fact Check, and SerpAPI with cross-source reconciliation
 - **Transparent Reasoning**: Detailed logs showing agent decision-making process
 - **Multiple Output Formats**: JSON and Markdown reports
 - **Model-Agnostic**: Uses OpenRouter for access to Claude, GPT-4, Gemini, and more
@@ -29,7 +29,12 @@ PodcastOrchestrator
 ## Requirements
 
 - Python 3.12+
-- OpenRouter API key (for LLM access)
+- **OpenRouter API key** (required for LLM access)
+- **Fact-Checking API keys** (at least one required):
+  - Perplexity API (recommended)
+  - Tavily API (recommended)
+  - Google Fact Check API
+  - SerpAPI (optional)
 
 ## Installation
 
@@ -59,13 +64,25 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-Edit `.env` and add your OpenRouter API key:
+Edit `.env` and add your API keys:
 
 ```
-OPENROUTER_API_KEY=your_api_key_here
+# Required
+OPENROUTER_API_KEY=your_openrouter_key_here
+
+# Fact-Checking APIs (at least one required)
+PERPLEXITY_API_KEY=your_perplexity_key_here
+TAVILY_API_KEY=your_tavily_key_here
+GOOGLE_FACT_CHECK_API_KEY=your_google_key_here
+SERPAPI_KEY=your_serpapi_key_here  # Optional
 ```
 
-Get an API key from [OpenRouter](https://openrouter.ai/).
+Get API keys from:
+- [OpenRouter](https://openrouter.ai/) (required)
+- [Perplexity](https://www.perplexity.ai/settings/api) (recommended)
+- [Tavily](https://tavily.com/) (recommended)
+- [Google Fact Check Tools API](https://developers.google.com/fact-check/tools/api)
+- [SerpAPI](https://serpapi.com/) (optional)
 
 ## Usage
 
@@ -238,20 +255,29 @@ quality:
     min_confidence: 0.6
 ```
 
-## Knowledge Base
+## Multi-Source Fact-Checking
 
-The fact-checking engine uses a mock knowledge base in `data/knowledge_base.json` containing:
+The fact-checking engine uses **multiple real-time search APIs** to verify claims:
 
-- Company information (GitLab, Automattic, Doist)
-- Regulations (FDA AI/ML medical devices)
-- Statistics (remote work, AI healthcare adoption, startup survival)
-- Technology definitions
-- Industry predictions
+### How It Works
 
-In production, this would be replaced with:
-- Vector database (Pinecone, Weaviate)
-- Real-time web search (Perplexity, Tavily)
-- Trusted knowledge sources (Wikipedia, official databases)
+1. **Claim Identification**: LLM identifies factual claims from transcript (no minimum threshold)
+2. **Multi-API Search**: Each claim is verified against:
+   - **Perplexity**: AI-powered search with citations
+   - **Tavily**: Research-focused search API
+   - **Google Fact Check**: Official fact-checking database
+   - **SerpAPI**: Google search results (optional)
+3. **Reconciliation**: Cross-references results from all sources
+4. **Consensus Verification**: Determines status based on agreement:
+   - ✅ **Verified**: 3+ sources agree
+   - ⚠️ **Possibly Inaccurate**: Sources conflict or time-sensitive
+   - ❓ **Unverifiable**: No sources found or inconclusive
+
+### Important Notes
+- At least one fact-checking API key is required
+- System gracefully handles 0 claims (if episode has no factual statements)
+- Each fact-check result includes sources from multiple APIs
+- Confidence scores reflect consensus strength
 
 ## Project Structure
 
@@ -262,8 +288,7 @@ seekr-2/
 ├── .env.example              # Environment template
 ├── config/
 │   └── settings.yaml         # Configuration
-├── data/
-│   └── knowledge_base.json   # Mock fact-check KB
+├── data/                     # Data directory (for future use)
 ├── sample_inputs/            # Sample podcast transcripts
 │   ├── ep001_remote_work.json
 │   ├── ep002_ai_healthcare.json
@@ -321,17 +346,24 @@ Typical processing times (using Claude 3.5 Sonnet):
 
 ## Cost Estimation
 
-Using OpenRouter pricing (approximate):
+### OpenRouter (LLM)
 - Claude 3.5 Sonnet: $3 per 1M tokens (input) / $15 per 1M tokens (output)
 - Per episode: ~$0.05-0.15
 - 100 episodes: ~$5-15
 
+### Fact-Checking APIs (approximate)
+- Perplexity: $1-5 per 1M tokens
+- Tavily: $0.001 per search request
+- Google Fact Check: Free tier available
+- SerpAPI: $50/month for 5K searches
+
+**Total per episode**: ~$0.10-0.25 including all APIs
+
 ## Limitations
 
-Current limitations (MVP):
-- Mock knowledge base (would need real data sources in production)
+Current limitations:
 - Sequential processing (could parallelize summarization and extraction)
-- No caching (repeated claims verified each time)
+- No caching for fact-check results (repeated claims verified each time)
 - Limited error recovery
 - No social media content generation (planned feature)
 
