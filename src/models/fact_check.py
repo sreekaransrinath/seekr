@@ -20,11 +20,9 @@ class ClaimType(str, Enum):
 class VerificationStatus(str, Enum):
     """Verification status of a claim."""
 
-    VERIFIED = "verified"
-    PARTIALLY_VERIFIED = "partially_verified"
-    UNVERIFIED = "unverified"
-    INCORRECT = "incorrect"
-    UNABLE_TO_VERIFY = "unable_to_verify"
+    VERIFIED = "verified"  # ✅ Verified true
+    POSSIBLY_INACCURATE = "possibly_inaccurate"  # ⚠️ Possibly outdated/inaccurate
+    UNVERIFIABLE = "unverifiable"  # ❓ Unverifiable
 
 
 class FactualClaim(BaseModel):
@@ -44,6 +42,7 @@ class Source(BaseModel):
     url: Optional[str] = Field(None, description="Source URL")
     excerpt: Optional[str] = Field(None, description="Relevant excerpt")
     reliability_score: float = Field(default=0.8, ge=0.0, le=1.0, description="Source reliability")
+    api_source: str = Field(..., description="Which API provided this source (perplexity, tavily, google_factcheck, serpapi)")
 
 
 class FactCheckResult(BaseModel):
@@ -63,8 +62,6 @@ class FactCheckResult(BaseModel):
         status = info.data.get('verification_status')
         if status == VerificationStatus.VERIFIED and v < 0.7:
             raise ValueError("Verified claims should have confidence >= 0.7")
-        if status == VerificationStatus.INCORRECT and v < 0.7:
-            raise ValueError("Incorrect claims should have confidence >= 0.7")
         return v
 
 
@@ -82,14 +79,6 @@ class EpisodeFactChecks(BaseModel):
         self.total_claims = len(self.fact_checks)
         self.verified_count = sum(
             1 for fc in self.fact_checks
-            if fc.verification_status in [VerificationStatus.VERIFIED, VerificationStatus.PARTIALLY_VERIFIED]
+            if fc.verification_status == VerificationStatus.VERIFIED
         )
         self.unverified_count = self.total_claims - self.verified_count
-
-    @field_validator('fact_checks')
-    @classmethod
-    def validate_fact_check_count(cls, v: List[FactCheckResult]) -> List[FactCheckResult]:
-        """Ensure at least 3 fact checks."""
-        if len(v) < 3:
-            raise ValueError(f"Must have at least 3 fact checks, got {len(v)}")
-        return v

@@ -72,20 +72,23 @@ class EpisodeReport(BaseModel):
 
         # Fact Checks
         md += "## ✓ Fact Checks\n"
-        md += f"**Summary**: {self.fact_checks.verified_count}/{self.fact_checks.total_claims} claims verified\n\n"
-        md += "| Claim | Status | Confidence | Explanation |\n"
-        md += "|-------|--------|------------|-------------|\n"
-        for fc in self.fact_checks.fact_checks:
-            status_emoji = {
-                "verified": "✅",
-                "partially_verified": "⚠️",
-                "incorrect": "❌",
-                "unverified": "❓",
-                "unable_to_verify": "❓"
-            }.get(fc.verification_status.value, "❓")
-            claim_short = fc.claim.claim_text[:50] + "..." if len(fc.claim.claim_text) > 50 else fc.claim.claim_text
-            md += f"| {claim_short} | {status_emoji} {fc.verification_status.value} | {fc.confidence_score:.2f} | {fc.explanation[:80]}... |\n"
-        md += "\n"
+        if self.fact_checks.total_claims > 0:
+            md += f"**Summary**: {self.fact_checks.verified_count}/{self.fact_checks.total_claims} claims verified\n\n"
+            md += "| Claim | Status | Confidence | Explanation | Sources |\n"
+            md += "|-------|--------|------------|-------------|----------|\n"
+            for fc in self.fact_checks.fact_checks:
+                status_emoji = {
+                    "verified": "✅",
+                    "possibly_inaccurate": "⚠️",
+                    "unverifiable": "❓"
+                }.get(fc.verification_status.value, "❓")
+                claim_short = fc.claim.claim_text[:40] + "..." if len(fc.claim.claim_text) > 40 else fc.claim.claim_text
+                explanation_short = fc.explanation[:60] + "..." if len(fc.explanation) > 60 else fc.explanation
+                sources_count = f"{len(fc.sources)} sources"
+                md += f"| {claim_short} | {status_emoji} {fc.verification_status.value} | {fc.confidence_score:.2f} | {explanation_short} | {sources_count} |\n"
+            md += "\n"
+        else:
+            md += "No factual claims identified in this episode.\n\n"
 
         # Processing Metrics
         md += "## 📊 Processing Metrics\n"

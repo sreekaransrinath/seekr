@@ -1,4 +1,5 @@
 """Orchestrator for coordinating all processing agents and engines."""
+import os
 import time
 from pathlib import Path
 from typing import Optional
@@ -22,6 +23,10 @@ class PodcastOrchestrator:
         llm_gateway: LLMGateway,
         output_dir: Optional[Path] = None,
         enable_reasoning_logs: bool = True,
+        perplexity_key: Optional[str] = None,
+        tavily_key: Optional[str] = None,
+        google_key: Optional[str] = None,
+        serpapi_key: Optional[str] = None,
     ):
         """
         Initialize orchestrator.
@@ -30,6 +35,10 @@ class PodcastOrchestrator:
             llm_gateway: LLM gateway instance
             output_dir: Output directory for results
             enable_reasoning_logs: Whether to enable reasoning logs
+            perplexity_key: Perplexity API key for fact-checking
+            tavily_key: Tavily API key for fact-checking
+            google_key: Google Fact Check API key
+            serpapi_key: SerpAPI key (optional)
         """
         self.llm = llm_gateway
         self.output_dir = output_dir or Path("outputs")
@@ -39,7 +48,13 @@ class PodcastOrchestrator:
         self.parser = TranscriptParser()
         self.summarizer = SummarizationEngine(llm_gateway)
         self.extractor = ExtractionEngine(llm_gateway)
-        self.fact_checker = FactCheckEngine(llm_gateway)
+        self.fact_checker = FactCheckEngine(
+            llm_gateway,
+            perplexity_key=perplexity_key or os.getenv("PERPLEXITY_API_KEY"),
+            tavily_key=tavily_key or os.getenv("TAVILY_API_KEY"),
+            google_key=google_key or os.getenv("GOOGLE_FACT_CHECK_API_KEY"),
+            serpapi_key=serpapi_key or os.getenv("SERPAPI_KEY"),
+        )
 
         # Initialize reasoning logger
         self.reasoning = ReasoningLogger(output_dir) if enable_reasoning_logs else None
@@ -143,25 +158,32 @@ class PodcastOrchestrator:
             self.reasoning.log_execution(
                 task="Fact-Check Claims",
                 reasoning=(
-                    "Identifying factual claims and verifying against knowledge base. "
-                    "Will extract verifiable claims, search knowledge base, and determine verification status."
+                    "Identifying factual claims and verifying using multiple search APIs. "
+                    "Will extract verifiable claims, query Perplexity/Tavily/Google Fact Check, "
+                    "and reconcile results across sources to determine consensus verification status."
                 ),
             )
 
         fact_checks = self.fact_checker.fact_check_episode(episode, model=model)
 
         if self.reasoning:
-            self.reasoning.log_validation(
-                task="Fact-Check Claims",
-                reasoning="Claims identified and verified",
-                outcome=(
-                    f"Fact-checked {fact_checks.total_claims} claims: "
-                    f"{fact_checks.verified_count} verified, {fact_checks.unverified_count} unverified"
-                ),
-                context={
-                    "verification_rate": f"{fact_checks.verified_count / fact_checks.total_claims * 100:.1f}%"
-                },
-            )
+            if fact_checks.total_claims > 0:
+                verification_rate = f"{fact_checks.verified_count / fact_checks.total_claims * 100:.1f}%"
+                self.reasoning.log_validation(
+                    task="Fact-Check Claims",
+                    reasoning="Claims identified and verified using multi-source reconciliation",
+                    outcome=(
+                        f"Fact-checked {fact_checks.total_claims} claims: "
+                        f"{fact_checks.verified_count} verified, {fact_checks.unverified_count} unverified/uncertain"
+                    ),
+                    context={"verification_rate": verification_rate},
+                )
+            else:
+                self.reasoning.log_validation(
+                    task="Fact-Check Claims",
+                    reasoning="No factual claims identified in this episode",
+                    outcome="0 claims found - episode may focus on opinions/discussion rather than facts",
+                )
 
         # Calculate metrics
         processing_time = time.time() - start_time
