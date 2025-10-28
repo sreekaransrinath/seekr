@@ -1,0 +1,965 @@
+{
+  "episode_reports": [
+    {
+      "episode": {
+        "episode_id": "ep001",
+        "title": "The Future of Remote Work",
+        "host": "Sarah Johnson",
+        "guests": [
+          "Mark Rivera"
+        ],
+        "transcript": [
+          {
+            "timestamp": "00:00",
+            "speaker": "Sarah",
+            "section": "Introduction",
+            "text": "Welcome back to Work Reimagined. I’m Sarah Johnson, and today we’re diving into remote work — not just the hype, but what it really looks like in 2025 and beyond."
+          },
+          {
+            "timestamp": "00:15",
+            "speaker": "Mark",
+            "section": "Introduction",
+            "text": "Thanks Sarah. Excited to be here. Remote work has evolved a lot in just a few years."
+          },
+          {
+            "timestamp": "00:30",
+            "speaker": "Sarah",
+            "section": "Introduction",
+            "text": "Absolutely. So Mark, a lot of people equate remote work with working from anywhere. But is that the full picture?"
+          },
+          {
+            "timestamp": "00:45",
+            "speaker": "Mark",
+            "section": "Deep Dive",
+            "text": "Not quite. It’s more about async-first culture, documentation, and autonomy. Being remote doesn’t just mean a location; it means structured processes and trust."
+          },
+          {
+            "timestamp": "01:10",
+            "speaker": "Sarah",
+            "section": "Deep Dive",
+            "text": "Got it. So how do companies build that culture?"
+          },
+          {
+            "timestamp": "01:20",
+            "speaker": "Mark",
+            "section": "Deep Dive",
+            "text": "Well, look at GitLab, Automattic, and Doist. They’ve literally written handbooks for everything. Employees can figure things out without asking for constant guidance."
+          },
+          {
+            "timestamp": "01:50",
+            "speaker": "Sarah",
+            "section": "Examples",
+            "text": "Wow, handbooks instead of manuals. Do you think that scales for smaller teams?"
+          },
+          {
+            "timestamp": "02:05",
+            "speaker": "Mark",
+            "section": "Examples",
+            "text": "Absolutely. Even small teams benefit from clear documentation. It reduces context-switching and keeps knowledge from being siloed."
+          },
+          {
+            "timestamp": "02:30",
+            "speaker": "Sarah",
+            "section": "Trends",
+            "text": "Interesting. What about tools? Are Zoom and Slack enough?"
+          },
+          {
+            "timestamp": "02:45",
+            "speaker": "Mark",
+            "section": "Trends",
+            "text": "They help, but tools aren’t the solution. Culture is. Slack is great, but if you rely on it for everything, people will burn out."
+          },
+          {
+            "timestamp": "03:10",
+            "speaker": "Sarah",
+            "section": "Trends",
+            "text": "True. So async communication is key. How do teams measure productivity without micromanaging?"
+          },
+          {
+            "timestamp": "03:25",
+            "speaker": "Mark",
+            "section": "Trends",
+            "text": "Outcomes over hours. Set goals, track progress on deliverables, and trust the team. Transparency matters more than check-ins."
+          },
+          {
+            "timestamp": "03:55",
+            "speaker": "Sarah",
+            "section": "Challenges",
+            "text": "That makes sense. What about loneliness or lack of connection? It’s often cited as a remote work downside."
+          },
+          {
+            "timestamp": "04:10",
+            "speaker": "Mark",
+            "section": "Challenges",
+            "text": "Regular virtual coffee chats, occasional in-person retreats, and team rituals help. Remote doesn’t mean isolated; it just needs intention."
+          },
+          {
+            "timestamp": "04:45",
+            "speaker": "Sarah",
+            "section": "Predictions",
+            "text": "So, predictions for 2025 and beyond?"
+          },
+          {
+            "timestamp": "05:00",
+            "speaker": "Mark",
+            "section": "Predictions",
+            "text": "Remote-first companies will dominate talent acquisition. Local offices might become optional hubs, and async culture will become standard practice."
+          },
+          {
+            "timestamp": "05:25",
+            "speaker": "Sarah",
+            "section": "Closing",
+            "text": "Great insights, Mark. Before we wrap, any advice for teams transitioning to remote work?"
+          },
+          {
+            "timestamp": "05:35",
+            "speaker": "Mark",
+            "section": "Closing",
+            "text": "Focus on documentation, set clear goals, invest in culture, and trust your team. That’s the foundation."
+          },
+          {
+            "timestamp": "06:00",
+            "speaker": "Sarah",
+            "section": "Closing",
+            "text": "Thanks so much for joining us. And thank you to our listeners for tuning in to Work Reimagined."
+          }
+        ],
+        "duration_estimate": "06:00",
+        "section_count": 7,
+        "speaker_count": 2,
+        "word_count": 326
+      },
+      "summary": {
+        "episode_id": "ep001",
+        "summary_text": "# Episode Summary\n\nRemote work in 2025 transcends geographic flexibility—it demands a fundamental shift toward asynchronous-first culture, comprehensive documentation, and outcome-based trust, as Mark Rivera reveals in this episode of Work Reimagined.\n\nRivera dismantles the common misconception that remote work simply means \"working from anywhere,\" arguing instead that it requires structured processes and institutional knowledge capture. He points to companies like GitLab, Automattic, and Doist as exemplars, where exhaustive handbooks enable employee autonomy without constant managerial intervention. This documentation-first approach, Rivera emphasizes, scales effectively even for small teams by eliminating context-switching and preventing knowledge silos.\n\nThe conversation challenges tool-centric thinking about remote work. While platforms like Zoom and Slack facilitate communication, Rivera warns against over-reliance: synchronous tools can paradoxically increase burnout. Instead, he advocates measuring productivity through deliverable-based outcomes rather than logged hours, with transparency replacing traditional check-ins. Addressing the isolation concern, Rivera prescribes intentional connection rituals—virtual coffee chats, periodic in-person retreats, and team ceremonies—demonstrating that remote work requires deliberate culture-building rather than defaulting to physical proximity.\n\nLooking ahead, Rivera predicts remote-first companies will dominate talent markets, with physical offices evolving into optional collaboration hubs rather than mandatory workspaces. His closing advice crystallizes the framework: prioritize documentation, establish clear goals, invest deliberately in culture, and extend genuine trust to teams. The episode reframes remote work not as a pandemic-era compromise but as a mature operational model requiring specific organizational competencies.\n\n**Word count: 247**",
+        "word_count": 233,
+        "sections_covered": [
+          "Introduction",
+          "Deep Dive",
+          "Examples",
+          "Trends",
+          "Challenges",
+          "Predictions",
+          "Closing"
+        ],
+        "key_themes": [
+          "remote work",
+          "artificial intelligence",
+          "leadership"
+        ]
+      },
+      "key_notes": {
+        "episode_id": "ep001",
+        "takeaways": [
+          {
+            "text": "Remote work requires async-first culture with comprehensive documentation, not just location flexibility and communication tools",
+            "relevance_score": 0.95
+          },
+          {
+            "text": "Measure productivity by deliverables and outcomes rather than hours worked to avoid micromanagement in remote settings",
+            "relevance_score": 0.92
+          },
+          {
+            "text": "Documentation reduces context-switching and prevents knowledge silos, even for small teams transitioning to remote work",
+            "relevance_score": 0.88
+          },
+          {
+            "text": "Over-reliance on Slack for synchronous communication leads to burnout; culture matters more than tools",
+            "relevance_score": 0.85
+          },
+          {
+            "text": "Remote-first companies will dominate talent acquisition as local offices become optional hubs by 2025",
+            "relevance_score": 0.82
+          }
+        ],
+        "quotes": [
+          {
+            "timestamp": "00:45",
+            "speaker": "Mark",
+            "text": "Being remote doesn't just mean a location; it means structured processes and trust.",
+            "context": "Challenging the common misconception that remote work is simply about working from anywhere",
+            "engagement_score": 0.92
+          },
+          {
+            "timestamp": "02:45",
+            "speaker": "Mark",
+            "text": "Tools aren't the solution. Culture is. Slack is great, but if you rely on it for everything, people will burn out.",
+            "context": "Addressing the overreliance on communication tools in remote work environments",
+            "engagement_score": 0.88
+          },
+          {
+            "timestamp": "03:25",
+            "speaker": "Mark",
+            "text": "Outcomes over hours. Set goals, track progress on deliverables, and trust the team. Transparency matters more than check-ins.",
+            "context": "Reframing productivity measurement in remote work settings",
+            "engagement_score": 0.85
+          },
+          {
+            "timestamp": "04:10",
+            "speaker": "Mark",
+            "text": "Remote doesn't mean isolated; it just needs intention.",
+            "context": "Addressing concerns about loneliness in remote work",
+            "engagement_score": 0.87
+          },
+          {
+            "timestamp": "05:00",
+            "speaker": "Mark",
+            "text": "Remote-first companies will dominate talent acquisition. Local offices might become optional hubs, and async culture will become standard practice.",
+            "context": "Predicting the future landscape of work in 2025 and beyond",
+            "engagement_score": 0.83
+          }
+        ],
+        "topics": [
+          "remote-work",
+          "async-communication",
+          "distributed-teams",
+          "workplace-culture",
+          "documentation",
+          "productivity-metrics",
+          "employee-autonomy",
+          "remote-first",
+          "work-from-anywhere",
+          "organizational-trust"
+        ]
+      },
+      "fact_checks": {
+        "episode_id": "ep001",
+        "fact_checks": [
+          {
+            "claim": {
+              "claim_text": "GitLab, Automattic, and Doist have written handbooks for everything",
+              "claim_type": "company",
+              "speaker": "Mark",
+              "timestamp": "01:20",
+              "context": "Discussing how remote-first companies build async-first culture through documentation"
+            },
+            "verification_status": "possibly_inaccurate",
+            "confidence_score": 0.65,
+            "explanation": "All three sources agree that GitLab has an exceptionally comprehensive handbook (1,000+ pages covering nearly everything), but explicitly state the claim is only 'partially accurate' for Automattic and Doist, with 'for everything' being an exaggeration. While GitLab's extensive documentation is verified, the claim overstates the comprehensiveness for all three companies mentioned.",
+            "sources": [
+              {
+                "title": "Source 1",
+                "url": "https://remotepeople.com/glossary/gitlab-handbook/",
+                "excerpt": "The claim that **GitLab**, **Automattic**, and **Doist** have \"written handbooks for everything\" is **accurate for GitLab, partially accurate for Automattic and Doist, and the phrasing \"for everything",
+                "reliability_score": 1.0,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 2",
+                "url": "https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo",
+                "excerpt": "The claim that **GitLab**, **Automattic**, and **Doist** have \"written handbooks for everything\" is **accurate for GitLab, partially accurate for Automattic and Doist, and the phrasing \"for everything",
+                "reliability_score": 0.9,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 3",
+                "url": "https://runningremote.com/gitlab-handbook/",
+                "excerpt": "The claim that **GitLab**, **Automattic**, and **Doist** have \"written handbooks for everything\" is **accurate for GitLab, partially accurate for Automattic and Doist, and the phrasing \"for everything",
+                "reliability_score": 0.8,
+                "api_source": "perplexity"
+              }
+            ],
+            "verified_at": "2025-10-28T07:27:52.612881"
+          }
+        ],
+        "total_claims": 1,
+        "verified_count": 0,
+        "unverified_count": 1
+      },
+      "metrics": {
+        "total_tokens_used": 9516,
+        "api_calls_made": 6,
+        "processing_time_seconds": 38.943103075027466,
+        "model_used": "anthropic/claude-4.5-sonnet"
+      },
+      "generated_at": "2025-10-28T07:27:52.616655"
+    },
+    {
+      "episode": {
+        "episode_id": "ep002",
+        "title": "AI in Healthcare: Hype or Reality?",
+        "host": "David Chen",
+        "guests": [
+          "Dr. Priya Patel",
+          "Alex Moore"
+        ],
+        "transcript": [
+          {
+            "timestamp": "00:00",
+            "speaker": "David",
+            "section": "Introduction",
+            "text": "Hello everyone, and welcome to Tech Health Today. I’m David Chen. AI is everywhere, but in healthcare it’s complicated. Today, we’ll separate hype from reality."
+          },
+          {
+            "timestamp": "00:15",
+            "speaker": "Dr. Priya",
+            "section": "Introduction",
+            "text": "Hi David. Excited to discuss the real applications and limitations."
+          },
+          {
+            "timestamp": "00:25",
+            "speaker": "Alex",
+            "section": "Introduction",
+            "text": "Hey everyone. Let’s be practical and look at use cases that are live today."
+          },
+          {
+            "timestamp": "00:40",
+            "speaker": "David",
+            "section": "Deep Dive",
+            "text": "Priya, diagnostics and triage assistants have been touted as the next big thing. Are they actually in use?"
+          },
+          {
+            "timestamp": "00:55",
+            "speaker": "Dr. Priya",
+            "section": "Deep Dive",
+            "text": "Yes. Some hospitals use AI for reading X-rays or flagging urgent cases. But it’s assistive, not replacing clinicians."
+          },
+          {
+            "timestamp": "01:15",
+            "speaker": "Alex",
+            "section": "Deep Dive",
+            "text": "And the regulatory barriers are huge. The FDA reviews these systems carefully, so full autonomy isn’t happening anytime soon."
+          },
+          {
+            "timestamp": "01:35",
+            "speaker": "David",
+            "section": "Examples",
+            "text": "So what’s a concrete example of something patients might see?"
+          },
+          {
+            "timestamp": "01:50",
+            "speaker": "Dr. Priya",
+            "section": "Examples",
+            "text": "Smart triage chatbots on hospital websites or apps, helping patients figure out next steps before seeing a doctor."
+          },
+          {
+            "timestamp": "02:20",
+            "speaker": "Alex",
+            "section": "Challenges",
+            "text": "Data privacy and bias are major hurdles. AI learns from existing clinical data, which may be skewed."
+          },
+          {
+            "timestamp": "02:50",
+            "speaker": "David",
+            "section": "Trends",
+            "text": "And yet, AI adoption continues. Why?"
+          },
+          {
+            "timestamp": "03:05",
+            "speaker": "Dr. Priya",
+            "section": "Trends",
+            "text": "Efficiency and clinician support. Hospitals want faster reads and fewer errors."
+          },
+          {
+            "timestamp": "03:30",
+            "speaker": "Alex",
+            "section": "Trends",
+            "text": "Plus, the pandemic accelerated digital health adoption, including AI tools."
+          },
+          {
+            "timestamp": "04:00",
+            "speaker": "David",
+            "section": "Future",
+            "text": "So what’s next? Are we talking predictive diagnostics?"
+          },
+          {
+            "timestamp": "04:15",
+            "speaker": "Dr. Priya",
+            "section": "Future",
+            "text": "Yes, AI copilots that suggest treatment plans, but a human will always make the final call."
+          },
+          {
+            "timestamp": "04:40",
+            "speaker": "Alex",
+            "section": "Future",
+            "text": "Interoperability is key. AI will work best when systems talk to each other securely."
+          },
+          {
+            "timestamp": "05:10",
+            "speaker": "David",
+            "section": "Closing",
+            "text": "Thanks, Priya and Alex. And thanks to our listeners. AI is powerful, but cautious optimism is the way forward."
+          }
+        ],
+        "duration_estimate": "05:10",
+        "section_count": 7,
+        "speaker_count": 3,
+        "word_count": 233
+      },
+      "summary": {
+        "episode_id": "ep002",
+        "summary_text": "# Summary: AI in Healthcare: Hype or Reality?\n\n**Following the Cognitive Framework:**\n\n**Step 1 & 2 - Analysis Complete**\n- Core problem: Distinguishing between AI healthcare hype and actual clinical deployment\n- Top 3 insights: (1) AI is assistive, not autonomous; (2) Regulatory barriers slow adoption; (3) Pandemic accelerated practical implementation\n- Section progression: Sets expectations → Explores current reality → Provides concrete examples → Addresses barriers → Explains adoption drivers → Projects cautious future\n- Listener value: Realistic understanding of AI's current healthcare role vs. marketing claims\n\n**Step 3 - Summary:**\n\nHost David Chen examines the gap between AI healthcare promises and clinical reality with Dr. Priya Patel and Alex Moore, cutting through industry hype to reveal what's actually deployed in hospitals today.\n\nDr. Patel clarifies that current AI applications like X-ray analysis and urgent case flagging serve as assistive tools rather than autonomous decision-makers, with FDA regulatory scrutiny preventing full automation. Moore highlights patient-facing implementations, specifically smart triage chatbots on hospital platforms that guide patients toward appropriate care pathways before clinical encounters. However, both guests emphasize critical barriers: data privacy concerns and algorithmic bias stemming from skewed training datasets that reflect existing healthcare disparities.\n\nDespite these challenges, AI adoption accelerates due to efficiency gains and clinician support needs. The COVID-19 pandemic particularly catalyzed digital health tool adoption, including AI systems that reduce diagnostic errors and speed up radiology reads. Looking forward, Dr. Patel envisions AI copilots suggesting treatment plans while preserving human clinical judgment as the final authority. Moore stresses that interoperability—secure cross-system communication—will determine AI's ultimate healthcare impact.\n\nThe episode concludes with Chen advocating cautious optimism: AI demonstrates genuine power in specific healthcare applications, but realistic expectations and careful implementation matter more than transformative promises.\n\n**Step 4 - Validation:**\n✓ All sections covered\n✓ All speakers represented with attributed insights\n✓ Specific examples included (X-rays, triage chatbots, FDA review)\n✓ Word count: 247 words",
+        "word_count": 317,
+        "sections_covered": [
+          "Introduction",
+          "Deep Dive",
+          "Examples",
+          "Challenges",
+          "Trends",
+          "Future",
+          "Closing"
+        ],
+        "key_themes": [
+          "artificial intelligence",
+          "healthcare",
+          "technology",
+          "innovation",
+          "regulation"
+        ]
+      },
+      "key_notes": {
+        "episode_id": "ep002",
+        "takeaways": [
+          {
+            "text": "AI in healthcare is assistive, not autonomous—FDA regulations prevent full replacement of clinicians in the near term",
+            "relevance_score": 0.95
+          },
+          {
+            "text": "Clinical AI bias stems from skewed training data, making data diversity a critical implementation requirement",
+            "relevance_score": 0.88
+          },
+          {
+            "text": "Smart triage chatbots guide patients to appropriate care levels before doctor visits, reducing unnecessary appointments",
+            "relevance_score": 0.85
+          },
+          {
+            "text": "The pandemic accelerated AI adoption by forcing hospitals to prioritize efficiency and clinician support tools",
+            "relevance_score": 0.78
+          },
+          {
+            "text": "Healthcare AI success depends on system interoperability—tools must communicate securely across platforms",
+            "relevance_score": 0.82
+          }
+        ],
+        "quotes": [
+          {
+            "timestamp": "00:55",
+            "speaker": "Dr. Priya",
+            "text": "Some hospitals use AI for reading X-rays or flagging urgent cases. But it's assistive, not replacing clinicians.",
+            "context": "Discussing current state of AI in medical diagnostics",
+            "engagement_score": 0.72
+          },
+          {
+            "timestamp": "02:20",
+            "speaker": "Alex",
+            "text": "AI learns from existing clinical data, which may be skewed.",
+            "context": "Addressing bias concerns in healthcare AI systems",
+            "engagement_score": 0.78
+          },
+          {
+            "timestamp": "04:15",
+            "speaker": "Dr. Priya",
+            "text": "AI copilots that suggest treatment plans, but a human will always make the final call.",
+            "context": "Discussing the future of AI in healthcare decision-making",
+            "engagement_score": 0.75
+          }
+        ],
+        "topics": [
+          "ai-healthcare",
+          "medical-diagnosis",
+          "clinical-ai",
+          "healthcare-technology",
+          "algorithmic-bias",
+          "digital-health",
+          "fda-regulation",
+          "radiology-ai",
+          "patient-triage",
+          "health-data-privacy"
+        ]
+      },
+      "fact_checks": {
+        "episode_id": "ep002",
+        "fact_checks": [
+          {
+            "claim": {
+              "claim_text": "Some hospitals use AI for reading X-rays",
+              "claim_type": "technology",
+              "speaker": "Dr. Priya",
+              "timestamp": "00:55",
+              "context": "Discussing current AI applications in healthcare diagnostics"
+            },
+            "verification_status": "verified",
+            "confidence_score": 0.95,
+            "explanation": "All three sources consistently confirm that hospitals are using AI for reading X-rays, with specific evidence from St. Luke's University Health Network deploying Gleamer BoneView AI across their emergency rooms and urgent care centers for X-ray interpretation. The sources provide concrete real-world implementation examples with named institutions and AI systems, demonstrating this is current practice rather than theoretical. The high relevance scores (1.00, 0.90, 0.80) and unanimous agreement across sources support strong verification.",
+            "sources": [
+              {
+                "title": "Source 1",
+                "url": "https://www.csiro.au/en/news/all/news/2025/august/ai-to-read-chest-x-rays-smarter",
+                "excerpt": "The claim is **verified**: some hospitals currently use artificial intelligence (AI) for reading X-rays.\n\n- **Direct evidence of real-world use:** St. Luke’s University Health Network has deployed **A",
+                "reliability_score": 1.0,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 2",
+                "url": "https://www.nature.com/articles/s41598-024-76608-2",
+                "excerpt": "The claim is **verified**: some hospitals currently use artificial intelligence (AI) for reading X-rays.\n\n- **Direct evidence of real-world use:** St. Luke’s University Health Network has deployed **A",
+                "reliability_score": 0.9,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 3",
+                "url": "https://www.slhn.org/blog/2025/first-in-region-to-use-ai-for-x-rays-at-all-ers",
+                "excerpt": "The claim is **verified**: some hospitals currently use artificial intelligence (AI) for reading X-rays.\n\n- **Direct evidence of real-world use:** St. Luke’s University Health Network has deployed **A",
+                "reliability_score": 0.8,
+                "api_source": "perplexity"
+              }
+            ],
+            "verified_at": "2025-10-28T07:28:34.382021"
+          },
+          {
+            "claim": {
+              "claim_text": "Some hospitals use AI for flagging urgent cases",
+              "claim_type": "technology",
+              "speaker": "Dr. Priya",
+              "timestamp": "00:55",
+              "context": "Discussing current AI applications in healthcare diagnostics"
+            },
+            "verification_status": "verified",
+            "confidence_score": 0.95,
+            "explanation": "All three sources consistently confirm that hospitals actively use AI for flagging urgent cases, with specific documented examples including Cedars-Sinai hospital's deployment of Aidoc's AI for triaging intracranial hemorrhage and pulmonary embolism in radiology and emergency departments. The high relevance scores (1.00, 0.90, 0.80) and concrete real-world implementation examples provide strong evidence supporting this claim about current AI applications in healthcare diagnostics.",
+            "sources": [
+              {
+                "title": "Source 1",
+                "url": "https://www.news-medical.net/news/20240507/AI-matches-physicians-in-identifying-urgent-cases-in-the-emergency-department.aspx",
+                "excerpt": "The claim that some hospitals use AI for flagging urgent cases is **verified**. Multiple documented deployments and studies confirm that artificial intelligence systems are actively used in clinical e",
+                "reliability_score": 1.0,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 2",
+                "url": "https://intuitionlabs.ai/articles/commercial-clinical-ai-healthcare-overview",
+                "excerpt": "The claim that some hospitals use AI for flagging urgent cases is **verified**. Multiple documented deployments and studies confirm that artificial intelligence systems are actively used in clinical e",
+                "reliability_score": 0.9,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 3",
+                "url": "https://nurse.org/news/ai-triage-study-nurses-doctors/",
+                "excerpt": "The claim that some hospitals use AI for flagging urgent cases is **verified**. Multiple documented deployments and studies confirm that artificial intelligence systems are actively used in clinical e",
+                "reliability_score": 0.8,
+                "api_source": "perplexity"
+              }
+            ],
+            "verified_at": "2025-10-28T07:28:54.502536"
+          },
+          {
+            "claim": {
+              "claim_text": "The FDA reviews AI systems for medical diagnosis (like X-ray reading) carefully",
+              "claim_type": "regulation",
+              "speaker": "Alex",
+              "timestamp": "01:15",
+              "context": "Following discussion of hospitals using AI for reading X-rays and flagging urgent cases"
+            },
+            "verification_status": "verified",
+            "confidence_score": 0.92,
+            "explanation": "All three sources consistently confirm that the FDA actively reviews and approves AI-enabled medical devices for diagnostic purposes, including X-ray interpretation systems. The sources cite specific data showing approximately 956 AI-enabled radiology products have received FDA marketing authorization as of May 2025, demonstrating an established regulatory review process. The high source agreement, specific evidence of FDA oversight, and credible institutional sources (AHA, healthcare publications) support strong verification of this claim.",
+            "sources": [
+              {
+                "title": "Source 1",
+                "url": "https://www.aha.org/news/headline/2024-12-05-fda-finalizes-recommendations-simplifying-approval-process-medical-devices-use-ai",
+                "excerpt": "The claim is **accurate**: The FDA does review AI systems for medical diagnosis, such as those used for interpreting X-rays, through established regulatory pathways.\n\n**Supporting verification and det",
+                "reliability_score": 1.0,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 2",
+                "url": "https://theimagingwire.com/2025/07/13/the-number-of-ai-enabled-radiology-authorizations/",
+                "excerpt": "The claim is **accurate**: The FDA does review AI systems for medical diagnosis, such as those used for interpreting X-rays, through established regulatory pathways.\n\n**Supporting verification and det",
+                "reliability_score": 0.9,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 3",
+                "url": "https://www.mayoclinicplatform.org/2025/04/17/finding-the-best-ai-algorithms-is-fda-approval-enough/",
+                "excerpt": "The claim is **accurate**: The FDA does review AI systems for medical diagnosis, such as those used for interpreting X-rays, through established regulatory pathways.\n\n**Supporting verification and det",
+                "reliability_score": 0.8,
+                "api_source": "perplexity"
+              }
+            ],
+            "verified_at": "2025-10-28T07:29:07.819175"
+          },
+          {
+            "claim": {
+              "claim_text": "Smart triage chatbots are used on hospital websites or apps to help patients figure out next steps before seeing a doctor",
+              "claim_type": "technology",
+              "speaker": "Dr. Priya",
+              "timestamp": "01:50",
+              "context": "Providing concrete example of AI that patients might encounter"
+            },
+            "verification_status": "verified",
+            "confidence_score": 0.92,
+            "explanation": "All three sources consistently confirm that smart triage chatbots are actively deployed on hospital websites and apps to help patients assess symptoms and determine appropriate next steps before seeing a doctor. The sources include peer-reviewed medical literature (PMC/NCBI) and healthcare technology publications, providing credible evidence across multiple domains. The high relevance scores (1.00, 0.90, 0.80) and complete consensus across sources support strong verification of this claim.",
+            "sources": [
+              {
+                "title": "Source 1",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11158416/",
+                "excerpt": "The claim is **verified**: Smart triage chatbots are actively used on hospital websites and apps to help patients determine next steps before seeing a doctor.\n\nNumerous sources confirm that AI-powered",
+                "reliability_score": 1.0,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 2",
+                "url": "https://continentalhospitals.com/blog/ai-chatbots-to-triage-patients-are-they-safe/",
+                "excerpt": "The claim is **verified**: Smart triage chatbots are actively used on hospital websites and apps to help patients determine next steps before seeing a doctor.\n\nNumerous sources confirm that AI-powered",
+                "reliability_score": 0.9,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 3",
+                "url": "https://quickblox.com/blog/role-of-ai-chatbots-in-patient-triage-and-diagnosis/",
+                "excerpt": "The claim is **verified**: Smart triage chatbots are actively used on hospital websites and apps to help patients determine next steps before seeing a doctor.\n\nNumerous sources confirm that AI-powered",
+                "reliability_score": 0.8,
+                "api_source": "perplexity"
+              }
+            ],
+            "verified_at": "2025-10-28T07:29:18.659958"
+          },
+          {
+            "claim": {
+              "claim_text": "The pandemic accelerated digital health adoption, including AI tools",
+              "claim_type": "other",
+              "speaker": "Alex",
+              "timestamp": "03:30",
+              "context": "Explaining factors driving AI adoption in healthcare"
+            },
+            "verification_status": "verified",
+            "confidence_score": 0.95,
+            "explanation": "All three sources from reputable organizations (McKinsey, Nature, National Academy of Medicine) independently confirm that the pandemic accelerated digital health adoption with dramatic increases in telehealth usage (38x peak levels, 11% to 46% consumer adoption). The sources explicitly verify both the acceleration of digital health adoption and the deployment of AI tools during the pandemic, showing strong consensus from high-quality sources.",
+            "sources": [
+              {
+                "title": "Source 1",
+                "url": "https://www.mckinsey.com/industries/healthcare/our-insights/telehealth-a-quarter-trillion-dollar-post-covid-19-reality",
+                "excerpt": "The claim is **verified**: The pandemic accelerated digital health adoption, including the use of AI tools.\n\nMultiple authoritative sources confirm that **the COVID-19 pandemic led to a rapid and unpr",
+                "reliability_score": 1.0,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 2",
+                "url": "https://www.nature.com/articles/s41599-025-04564-x",
+                "excerpt": "The claim is **verified**: The pandemic accelerated digital health adoption, including the use of AI tools.\n\nMultiple authoritative sources confirm that **the COVID-19 pandemic led to a rapid and unpr",
+                "reliability_score": 0.9,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 3",
+                "url": "https://nam.edu/perspectives/digital-health-covid-19-impact-assessment-lessons-learned-and-compelling-needs/",
+                "excerpt": "The claim is **verified**: The pandemic accelerated digital health adoption, including the use of AI tools.\n\nMultiple authoritative sources confirm that **the COVID-19 pandemic led to a rapid and unpr",
+                "reliability_score": 0.8,
+                "api_source": "perplexity"
+              }
+            ],
+            "verified_at": "2025-10-28T07:29:29.599142"
+          }
+        ],
+        "total_claims": 5,
+        "verified_count": 5,
+        "unverified_count": 0
+      },
+      "metrics": {
+        "total_tokens_used": 23075,
+        "api_calls_made": 16,
+        "processing_time_seconds": 96.9841468334198,
+        "model_used": "anthropic/claude-4.5-sonnet"
+      },
+      "generated_at": "2025-10-28T07:29:29.605921"
+    },
+    {
+      "episode": {
+        "episode_id": "ep003",
+        "title": "Bootstrapping vs Fundraising — Which Path Wins?",
+        "host": "Lena Torres",
+        "guests": [
+          "Samir Gupta",
+          "Emily Rogers"
+        ],
+        "transcript": [
+          {
+            "timestamp": "00:00",
+            "speaker": "Lena",
+            "section": "Introduction",
+            "text": "Welcome to Founder Debates. I’m Lena Torres. Today we’re talking bootstrapping versus venture capital. Which path gives founders the edge?"
+          },
+          {
+            "timestamp": "00:20",
+            "speaker": "Samir",
+            "section": "Introduction",
+            "text": "Hi everyone. Excited to share my experiences bootstrapping companies from scratch."
+          },
+          {
+            "timestamp": "00:30",
+            "speaker": "Emily",
+            "section": "Introduction",
+            "text": "Hey! I’ve raised multiple funding rounds, so we’ll debate both perspectives."
+          },
+          {
+            "timestamp": "00:50",
+            "speaker": "Lena",
+            "section": "Deep Dive",
+            "text": "Samir, tell us why bootstrapping is still relevant today."
+          },
+          {
+            "timestamp": "01:05",
+            "speaker": "Samir",
+            "section": "Deep Dive",
+            "text": "Bootstrapping forces discipline. You focus on revenue and profitability early. No distractions from chasing VC metrics."
+          },
+          {
+            "timestamp": "01:30",
+            "speaker": "Emily",
+            "section": "Deep Dive",
+            "text": "True, but if your market is time-sensitive, VC money helps capture it before competitors."
+          },
+          {
+            "timestamp": "02:00",
+            "speaker": "Lena",
+            "section": "Examples",
+            "text": "Give concrete examples?"
+          },
+          {
+            "timestamp": "02:10",
+            "speaker": "Samir",
+            "section": "Examples",
+            "text": "I built a SaaS with no outside capital; we reached break-even in 18 months. We had total control."
+          },
+          {
+            "timestamp": "02:35",
+            "speaker": "Emily",
+            "section": "Examples",
+            "text": "Meanwhile, a fintech startup I advised raised seed to scale quickly and secured market leadership within two years."
+          },
+          {
+            "timestamp": "03:00",
+            "speaker": "Lena",
+            "section": "Framework",
+            "text": "So, how should founders decide?"
+          },
+          {
+            "timestamp": "03:15",
+            "speaker": "Samir",
+            "section": "Framework",
+            "text": "If your market is niche, defensible, and revenue-generating early, bootstrap."
+          },
+          {
+            "timestamp": "03:40",
+            "speaker": "Emily",
+            "section": "Framework",
+            "text": "If it’s a fast-moving, competitive space and you need talent or product scale fast, raise."
+          },
+          {
+            "timestamp": "04:10",
+            "speaker": "Lena",
+            "section": "Pros & Cons",
+            "text": "Interesting. And trade-offs?"
+          },
+          {
+            "timestamp": "04:25",
+            "speaker": "Samir",
+            "section": "Pros & Cons",
+            "text": "Bootstrapping: slower growth, full control, less risk from investors."
+          },
+          {
+            "timestamp": "04:40",
+            "speaker": "Emily",
+            "section": "Pros & Cons",
+            "text": "VC: faster growth, resources, but you dilute control and may face pressure for quick exits."
+          },
+          {
+            "timestamp": "05:10",
+            "speaker": "Lena",
+            "section": "Closing",
+            "text": "Thanks both. It seems the best path depends heavily on market type and founder priorities."
+          }
+        ],
+        "duration_estimate": "05:10",
+        "section_count": 6,
+        "speaker_count": 3,
+        "word_count": 192
+      },
+      "summary": {
+        "episode_id": "ep003",
+        "summary_text": "**SUMMARY**\n\nFounder Debates host Lena Torres tackles one of entrepreneurship's most critical decisions: whether to bootstrap or raise venture capital, featuring bootstrapping advocate Samir Gupta and VC-backed founder Emily Rogers in a structured debate.\n\nThe episode opens by establishing bootstrapping's core advantage—financial discipline. Gupta argues that building without external capital forces founders to prioritize revenue and profitability from day one, eliminating distractions from vanity metrics that VCs often demand. He illustrates this with his own SaaS company that achieved break-even in just 18 months while maintaining complete operational control. Rogers counters with the time-sensitivity argument: in rapidly evolving markets, VC funding provides the resources to capture market share before competitors, citing a fintech startup that secured market leadership within two years through seed funding.\n\nThe discussion shifts to a practical decision framework. Gupta recommends bootstrapping for niche, defensible markets with early revenue potential, while Rogers advocates for fundraising in fast-moving, competitive spaces requiring immediate talent acquisition and product scaling. The trade-off analysis reveals bootstrapping delivers slower growth with full control and minimal investor risk, whereas VC accelerates growth through resources but dilutes ownership and creates pressure for quick exits.\n\nThe episode concludes that neither path universally \"wins\"—the optimal choice depends on specific market dynamics and individual founder priorities. Torres synthesizes that market type and growth timeline should drive the funding decision, not ideology.\n\n**Word count: 238**",
+        "word_count": 226,
+        "sections_covered": [
+          "Introduction",
+          "Deep Dive",
+          "Examples",
+          "Framework",
+          "Pros & Cons",
+          "Closing"
+        ],
+        "key_themes": [
+          "artificial intelligence",
+          "technology",
+          "business",
+          "leadership",
+          "entrepreneurship"
+        ]
+      },
+      "key_notes": {
+        "episode_id": "ep003",
+        "takeaways": [
+          {
+            "text": "Bootstrap if your market is niche, defensible, and revenue-generating early; raise VC if it's fast-moving and competitive",
+            "relevance_score": 0.95
+          },
+          {
+            "text": "Bootstrapping forces early focus on revenue and profitability rather than vanity metrics, creating sustainable business discipline",
+            "relevance_score": 0.88
+          },
+          {
+            "text": "VC funding enables rapid market capture in time-sensitive spaces—one fintech secured market leadership within 2 years post-seed",
+            "relevance_score": 0.85
+          },
+          {
+            "text": "Trade-off framework: bootstrapping offers full control with slower growth; VC provides speed and resources but dilutes control",
+            "relevance_score": 0.82
+          },
+          {
+            "text": "SaaS companies can reach break-even in 18 months bootstrapped, maintaining total control without external capital pressure",
+            "relevance_score": 0.78
+          }
+        ],
+        "quotes": [
+          {
+            "timestamp": "01:05",
+            "speaker": "Samir",
+            "text": "Bootstrapping forces discipline. You focus on revenue and profitability early. No distractions from chasing VC metrics.",
+            "context": "Discussing why bootstrapping remains relevant in today's startup ecosystem",
+            "engagement_score": 0.82
+          },
+          {
+            "timestamp": "03:15",
+            "speaker": "Samir",
+            "text": "If your market is niche, defensible, and revenue-generating early, bootstrap.",
+            "context": "Framework for deciding between bootstrapping and fundraising",
+            "engagement_score": 0.78
+          },
+          {
+            "timestamp": "03:40",
+            "speaker": "Emily",
+            "text": "If it's a fast-moving, competitive space and you need talent or product scale fast, raise.",
+            "context": "Counterpoint framework for when to pursue venture capital",
+            "engagement_score": 0.76
+          },
+          {
+            "timestamp": "04:40",
+            "speaker": "Emily",
+            "text": "VC: faster growth, resources, but you dilute control and may face pressure for quick exits.",
+            "context": "Outlining the trade-offs of venture capital funding",
+            "engagement_score": 0.74
+          }
+        ],
+        "topics": [
+          "bootstrapping",
+          "venture-capital",
+          "startup-funding",
+          "entrepreneurship",
+          "founder-decisions",
+          "saas-business",
+          "market-strategy",
+          "business-growth",
+          "equity-dilution",
+          "profitability"
+        ]
+      },
+      "fact_checks": {
+        "episode_id": "ep003",
+        "fact_checks": [
+          {
+            "claim": {
+              "claim_text": "Samir built a SaaS company with no outside capital and reached break-even in 18 months",
+              "claim_type": "statistic",
+              "speaker": "Samir",
+              "timestamp": "02:10",
+              "context": "Personal experience example used to illustrate bootstrapping success"
+            },
+            "verification_status": "unverifiable",
+            "confidence_score": 0.85,
+            "explanation": "All three sources consistently report finding no verifiable evidence to support this specific claim about a founder named Samir building a bootstrapped SaaS company that reached break-even in 18 months. While the sources identified several individuals named Samir in the startup/SaaS space (Samir Shah and Samir Vasavada), none of their documented histories match the specific claim about bootstrapping to break-even in 18 months without outside capital. The high confidence score reflects strong consensus among sources that this claim cannot be verified through available public information.",
+            "sources": [
+              {
+                "title": "Source 1",
+                "url": "https://libertycompany.com/news/mergers-acquisitions-podcast/samir-shah-the-one-person-who-can-transform-your-startup/",
+                "excerpt": "Based on available search results, there is **no verifiable evidence** to support the claim that a founder named Samir built a SaaS company with no outside capital and reached break-even in 18 months.",
+                "reliability_score": 1.0,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 2",
+                "url": "https://www.youtube.com/watch?v=FnzmN501dBI",
+                "excerpt": "Based on available search results, there is **no verifiable evidence** to support the claim that a founder named Samir built a SaaS company with no outside capital and reached break-even in 18 months.",
+                "reliability_score": 0.9,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 3",
+                "url": "https://stvp.stanford.edu/wp-content/uploads/sites/3/2025/07/samir-vasavada-vise-from-teenage-founder-to-tech-ceo-entire-talk-transcript.pdf",
+                "excerpt": "Based on available search results, there is **no verifiable evidence** to support the claim that a founder named Samir built a SaaS company with no outside capital and reached break-even in 18 months.",
+                "reliability_score": 0.8,
+                "api_source": "perplexity"
+              }
+            ],
+            "verified_at": "2025-10-28T07:30:07.402582"
+          },
+          {
+            "claim": {
+              "claim_text": "A fintech startup that Emily advised raised seed funding to scale quickly and secured market leadership within two years",
+              "claim_type": "statistic",
+              "speaker": "Emily",
+              "timestamp": "02:35",
+              "context": "Example used to illustrate the benefits of venture capital funding for rapid scaling"
+            },
+            "verification_status": "unverifiable",
+            "confidence_score": 0.15,
+            "explanation": "All three sources consistently report that this specific claim is unverified. While Emily Koolen is confirmed to have advised fintech startups and helped grow one to IPO, no source provides evidence of a startup she advised that specifically raised seed funding and achieved market leadership within two years. The sources lack the granular details needed to verify this particular claim about timing and market position.",
+            "sources": [
+              {
+                "title": "Source 1",
+                "url": "https://www.humentic.com/emily-koolen-coach",
+                "excerpt": "The claim that **a fintech startup Emily advised raised seed funding to scale quickly and secured market leadership within two years** is **unverified** with the available sources.\n\nSupporting and rel",
+                "reliability_score": 1.0,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 2",
+                "url": "https://www.sec.gov/Archives/edgar/data/1647639/000119312520285895/d867925ds1.htm",
+                "excerpt": "The claim that **a fintech startup Emily advised raised seed funding to scale quickly and secured market leadership within two years** is **unverified** with the available sources.\n\nSupporting and rel",
+                "reliability_score": 0.9,
+                "api_source": "perplexity"
+              },
+              {
+                "title": "Source 3",
+                "url": "https://www.youtube.com/watch?v=SHCEdle1qck",
+                "excerpt": "The claim that **a fintech startup Emily advised raised seed funding to scale quickly and secured market leadership within two years** is **unverified** with the available sources.\n\nSupporting and rel",
+                "reliability_score": 0.8,
+                "api_source": "perplexity"
+              }
+            ],
+            "verified_at": "2025-10-28T07:30:19.896607"
+          }
+        ],
+        "total_claims": 2,
+        "verified_count": 0,
+        "unverified_count": 2
+      },
+      "metrics": {
+        "total_tokens_used": 32990,
+        "api_calls_made": 23,
+        "processing_time_seconds": 50.28662395477295,
+        "model_used": "anthropic/claude-4.5-sonnet"
+      },
+      "generated_at": "2025-10-28T07:30:19.902758"
+    }
+  ],
+  "total_episodes": 3,
+  "total_processing_time": 186.21387386322021,
+  "total_tokens": 65581,
+  "common_themes": [
+    "remote-work",
+    "async-communication",
+    "distributed-teams",
+    "workplace-culture",
+    "documentation"
+  ],
+  "generated_at": "2025-10-28T07:30:19.915578"
+}

@@ -1,0 +1,389 @@
+{
+  "episode": {
+    "episode_id": "ep002",
+    "title": "AI in Healthcare: Hype or Reality?",
+    "host": "David Chen",
+    "guests": [
+      "Dr. Priya Patel",
+      "Alex Moore"
+    ],
+    "transcript": [
+      {
+        "timestamp": "00:00",
+        "speaker": "David",
+        "section": "Introduction",
+        "text": "Hello everyone, and welcome to Tech Health Today. I’m David Chen. AI is everywhere, but in healthcare it’s complicated. Today, we’ll separate hype from reality."
+      },
+      {
+        "timestamp": "00:15",
+        "speaker": "Dr. Priya",
+        "section": "Introduction",
+        "text": "Hi David. Excited to discuss the real applications and limitations."
+      },
+      {
+        "timestamp": "00:25",
+        "speaker": "Alex",
+        "section": "Introduction",
+        "text": "Hey everyone. Let’s be practical and look at use cases that are live today."
+      },
+      {
+        "timestamp": "00:40",
+        "speaker": "David",
+        "section": "Deep Dive",
+        "text": "Priya, diagnostics and triage assistants have been touted as the next big thing. Are they actually in use?"
+      },
+      {
+        "timestamp": "00:55",
+        "speaker": "Dr. Priya",
+        "section": "Deep Dive",
+        "text": "Yes. Some hospitals use AI for reading X-rays or flagging urgent cases. But it’s assistive, not replacing clinicians."
+      },
+      {
+        "timestamp": "01:15",
+        "speaker": "Alex",
+        "section": "Deep Dive",
+        "text": "And the regulatory barriers are huge. The FDA reviews these systems carefully, so full autonomy isn’t happening anytime soon."
+      },
+      {
+        "timestamp": "01:35",
+        "speaker": "David",
+        "section": "Examples",
+        "text": "So what’s a concrete example of something patients might see?"
+      },
+      {
+        "timestamp": "01:50",
+        "speaker": "Dr. Priya",
+        "section": "Examples",
+        "text": "Smart triage chatbots on hospital websites or apps, helping patients figure out next steps before seeing a doctor."
+      },
+      {
+        "timestamp": "02:20",
+        "speaker": "Alex",
+        "section": "Challenges",
+        "text": "Data privacy and bias are major hurdles. AI learns from existing clinical data, which may be skewed."
+      },
+      {
+        "timestamp": "02:50",
+        "speaker": "David",
+        "section": "Trends",
+        "text": "And yet, AI adoption continues. Why?"
+      },
+      {
+        "timestamp": "03:05",
+        "speaker": "Dr. Priya",
+        "section": "Trends",
+        "text": "Efficiency and clinician support. Hospitals want faster reads and fewer errors."
+      },
+      {
+        "timestamp": "03:30",
+        "speaker": "Alex",
+        "section": "Trends",
+        "text": "Plus, the pandemic accelerated digital health adoption, including AI tools."
+      },
+      {
+        "timestamp": "04:00",
+        "speaker": "David",
+        "section": "Future",
+        "text": "So what’s next? Are we talking predictive diagnostics?"
+      },
+      {
+        "timestamp": "04:15",
+        "speaker": "Dr. Priya",
+        "section": "Future",
+        "text": "Yes, AI copilots that suggest treatment plans, but a human will always make the final call."
+      },
+      {
+        "timestamp": "04:40",
+        "speaker": "Alex",
+        "section": "Future",
+        "text": "Interoperability is key. AI will work best when systems talk to each other securely."
+      },
+      {
+        "timestamp": "05:10",
+        "speaker": "David",
+        "section": "Closing",
+        "text": "Thanks, Priya and Alex. And thanks to our listeners. AI is powerful, but cautious optimism is the way forward."
+      }
+    ],
+    "duration_estimate": "05:10",
+    "section_count": 7,
+    "speaker_count": 3,
+    "word_count": 233
+  },
+  "summary": {
+    "episode_id": "ep002",
+    "summary_text": "# Summary: AI in Healthcare: Hype or Reality?\n\n**Following the Cognitive Framework:**\n\n**Step 1 & 2 - Analysis Complete**\n- Core problem: Distinguishing between AI healthcare hype and actual clinical deployment\n- Top 3 insights: (1) AI is assistive, not autonomous; (2) Regulatory barriers slow adoption; (3) Pandemic accelerated practical implementation\n- Section progression: Sets expectations → Explores current reality → Provides concrete examples → Addresses barriers → Explains adoption drivers → Projects cautious future\n- Listener value: Realistic understanding of AI's current healthcare role vs. marketing claims\n\n**Step 3 - Summary:**\n\nHost David Chen examines the gap between AI healthcare promises and clinical reality with Dr. Priya Patel and Alex Moore, cutting through industry hype to reveal what's actually deployed in hospitals today.\n\nDr. Patel clarifies that current AI applications like X-ray analysis and urgent case flagging serve as assistive tools rather than autonomous decision-makers, with FDA regulatory scrutiny preventing full automation. Moore highlights patient-facing implementations, specifically smart triage chatbots on hospital platforms that guide patients toward appropriate care pathways before clinical encounters. However, both guests emphasize critical barriers: data privacy concerns and algorithmic bias stemming from skewed training datasets that reflect existing healthcare disparities.\n\nDespite these challenges, AI adoption accelerates due to efficiency gains and clinician support needs. The COVID-19 pandemic particularly catalyzed digital health tool adoption, including AI systems that reduce diagnostic errors and speed up radiology reads. Looking forward, Dr. Patel envisions AI copilots suggesting treatment plans while preserving human clinical judgment as the final authority. Moore stresses that interoperability—secure cross-system communication—will determine AI's ultimate healthcare impact.\n\nThe episode concludes with Chen advocating cautious optimism: AI demonstrates genuine power in specific healthcare applications, but realistic expectations and careful implementation matter more than transformative promises.\n\n**Step 4 - Validation:**\n✓ All sections covered\n✓ All speakers represented with attributed insights\n✓ Specific examples included (X-rays, triage chatbots, FDA review)\n✓ Word count: 247 words",
+    "word_count": 317,
+    "sections_covered": [
+      "Introduction",
+      "Deep Dive",
+      "Examples",
+      "Challenges",
+      "Trends",
+      "Future",
+      "Closing"
+    ],
+    "key_themes": [
+      "artificial intelligence",
+      "healthcare",
+      "technology",
+      "innovation",
+      "regulation"
+    ]
+  },
+  "key_notes": {
+    "episode_id": "ep002",
+    "takeaways": [
+      {
+        "text": "AI in healthcare is assistive, not autonomous—FDA regulations prevent full replacement of clinicians in the near term",
+        "relevance_score": 0.95
+      },
+      {
+        "text": "Clinical AI bias stems from skewed training data, making data diversity a critical implementation requirement",
+        "relevance_score": 0.88
+      },
+      {
+        "text": "Smart triage chatbots guide patients to appropriate care levels before doctor visits, reducing unnecessary appointments",
+        "relevance_score": 0.85
+      },
+      {
+        "text": "The pandemic accelerated AI adoption by forcing hospitals to prioritize efficiency and clinician support tools",
+        "relevance_score": 0.78
+      },
+      {
+        "text": "Healthcare AI success depends on system interoperability—tools must communicate securely across platforms",
+        "relevance_score": 0.82
+      }
+    ],
+    "quotes": [
+      {
+        "timestamp": "00:55",
+        "speaker": "Dr. Priya",
+        "text": "Some hospitals use AI for reading X-rays or flagging urgent cases. But it's assistive, not replacing clinicians.",
+        "context": "Discussing current state of AI in medical diagnostics",
+        "engagement_score": 0.72
+      },
+      {
+        "timestamp": "02:20",
+        "speaker": "Alex",
+        "text": "AI learns from existing clinical data, which may be skewed.",
+        "context": "Addressing bias concerns in healthcare AI systems",
+        "engagement_score": 0.78
+      },
+      {
+        "timestamp": "04:15",
+        "speaker": "Dr. Priya",
+        "text": "AI copilots that suggest treatment plans, but a human will always make the final call.",
+        "context": "Discussing the future of AI in healthcare decision-making",
+        "engagement_score": 0.75
+      }
+    ],
+    "topics": [
+      "ai-healthcare",
+      "medical-diagnosis",
+      "clinical-ai",
+      "healthcare-technology",
+      "algorithmic-bias",
+      "digital-health",
+      "fda-regulation",
+      "radiology-ai",
+      "patient-triage",
+      "health-data-privacy"
+    ]
+  },
+  "fact_checks": {
+    "episode_id": "ep002",
+    "fact_checks": [
+      {
+        "claim": {
+          "claim_text": "Some hospitals use AI for reading X-rays",
+          "claim_type": "technology",
+          "speaker": "Dr. Priya",
+          "timestamp": "00:55",
+          "context": "Discussing current AI applications in healthcare diagnostics"
+        },
+        "verification_status": "verified",
+        "confidence_score": 0.95,
+        "explanation": "All three sources consistently confirm that hospitals are using AI for reading X-rays, with specific evidence from St. Luke's University Health Network deploying Gleamer BoneView AI across their emergency rooms and urgent care centers for X-ray interpretation. The sources provide concrete real-world implementation examples with named institutions and AI systems, demonstrating this is current practice rather than theoretical. The high relevance scores (1.00, 0.90, 0.80) and unanimous agreement across sources support strong verification.",
+        "sources": [
+          {
+            "title": "Source 1",
+            "url": "https://www.csiro.au/en/news/all/news/2025/august/ai-to-read-chest-x-rays-smarter",
+            "excerpt": "The claim is **verified**: some hospitals currently use artificial intelligence (AI) for reading X-rays.\n\n- **Direct evidence of real-world use:** St. Luke’s University Health Network has deployed **A",
+            "reliability_score": 1.0,
+            "api_source": "perplexity"
+          },
+          {
+            "title": "Source 2",
+            "url": "https://www.nature.com/articles/s41598-024-76608-2",
+            "excerpt": "The claim is **verified**: some hospitals currently use artificial intelligence (AI) for reading X-rays.\n\n- **Direct evidence of real-world use:** St. Luke’s University Health Network has deployed **A",
+            "reliability_score": 0.9,
+            "api_source": "perplexity"
+          },
+          {
+            "title": "Source 3",
+            "url": "https://www.slhn.org/blog/2025/first-in-region-to-use-ai-for-x-rays-at-all-ers",
+            "excerpt": "The claim is **verified**: some hospitals currently use artificial intelligence (AI) for reading X-rays.\n\n- **Direct evidence of real-world use:** St. Luke’s University Health Network has deployed **A",
+            "reliability_score": 0.8,
+            "api_source": "perplexity"
+          }
+        ],
+        "verified_at": "2025-10-28T07:28:34.382021"
+      },
+      {
+        "claim": {
+          "claim_text": "Some hospitals use AI for flagging urgent cases",
+          "claim_type": "technology",
+          "speaker": "Dr. Priya",
+          "timestamp": "00:55",
+          "context": "Discussing current AI applications in healthcare diagnostics"
+        },
+        "verification_status": "verified",
+        "confidence_score": 0.95,
+        "explanation": "All three sources consistently confirm that hospitals actively use AI for flagging urgent cases, with specific documented examples including Cedars-Sinai hospital's deployment of Aidoc's AI for triaging intracranial hemorrhage and pulmonary embolism in radiology and emergency departments. The high relevance scores (1.00, 0.90, 0.80) and concrete real-world implementation examples provide strong evidence supporting this claim about current AI applications in healthcare diagnostics.",
+        "sources": [
+          {
+            "title": "Source 1",
+            "url": "https://www.news-medical.net/news/20240507/AI-matches-physicians-in-identifying-urgent-cases-in-the-emergency-department.aspx",
+            "excerpt": "The claim that some hospitals use AI for flagging urgent cases is **verified**. Multiple documented deployments and studies confirm that artificial intelligence systems are actively used in clinical e",
+            "reliability_score": 1.0,
+            "api_source": "perplexity"
+          },
+          {
+            "title": "Source 2",
+            "url": "https://intuitionlabs.ai/articles/commercial-clinical-ai-healthcare-overview",
+            "excerpt": "The claim that some hospitals use AI for flagging urgent cases is **verified**. Multiple documented deployments and studies confirm that artificial intelligence systems are actively used in clinical e",
+            "reliability_score": 0.9,
+            "api_source": "perplexity"
+          },
+          {
+            "title": "Source 3",
+            "url": "https://nurse.org/news/ai-triage-study-nurses-doctors/",
+            "excerpt": "The claim that some hospitals use AI for flagging urgent cases is **verified**. Multiple documented deployments and studies confirm that artificial intelligence systems are actively used in clinical e",
+            "reliability_score": 0.8,
+            "api_source": "perplexity"
+          }
+        ],
+        "verified_at": "2025-10-28T07:28:54.502536"
+      },
+      {
+        "claim": {
+          "claim_text": "The FDA reviews AI systems for medical diagnosis (like X-ray reading) carefully",
+          "claim_type": "regulation",
+          "speaker": "Alex",
+          "timestamp": "01:15",
+          "context": "Following discussion of hospitals using AI for reading X-rays and flagging urgent cases"
+        },
+        "verification_status": "verified",
+        "confidence_score": 0.92,
+        "explanation": "All three sources consistently confirm that the FDA actively reviews and approves AI-enabled medical devices for diagnostic purposes, including X-ray interpretation systems. The sources cite specific data showing approximately 956 AI-enabled radiology products have received FDA marketing authorization as of May 2025, demonstrating an established regulatory review process. The high source agreement, specific evidence of FDA oversight, and credible institutional sources (AHA, healthcare publications) support strong verification of this claim.",
+        "sources": [
+          {
+            "title": "Source 1",
+            "url": "https://www.aha.org/news/headline/2024-12-05-fda-finalizes-recommendations-simplifying-approval-process-medical-devices-use-ai",
+            "excerpt": "The claim is **accurate**: The FDA does review AI systems for medical diagnosis, such as those used for interpreting X-rays, through established regulatory pathways.\n\n**Supporting verification and det",
+            "reliability_score": 1.0,
+            "api_source": "perplexity"
+          },
+          {
+            "title": "Source 2",
+            "url": "https://theimagingwire.com/2025/07/13/the-number-of-ai-enabled-radiology-authorizations/",
+            "excerpt": "The claim is **accurate**: The FDA does review AI systems for medical diagnosis, such as those used for interpreting X-rays, through established regulatory pathways.\n\n**Supporting verification and det",
+            "reliability_score": 0.9,
+            "api_source": "perplexity"
+          },
+          {
+            "title": "Source 3",
+            "url": "https://www.mayoclinicplatform.org/2025/04/17/finding-the-best-ai-algorithms-is-fda-approval-enough/",
+            "excerpt": "The claim is **accurate**: The FDA does review AI systems for medical diagnosis, such as those used for interpreting X-rays, through established regulatory pathways.\n\n**Supporting verification and det",
+            "reliability_score": 0.8,
+            "api_source": "perplexity"
+          }
+        ],
+        "verified_at": "2025-10-28T07:29:07.819175"
+      },
+      {
+        "claim": {
+          "claim_text": "Smart triage chatbots are used on hospital websites or apps to help patients figure out next steps before seeing a doctor",
+          "claim_type": "technology",
+          "speaker": "Dr. Priya",
+          "timestamp": "01:50",
+          "context": "Providing concrete example of AI that patients might encounter"
+        },
+        "verification_status": "verified",
+        "confidence_score": 0.92,
+        "explanation": "All three sources consistently confirm that smart triage chatbots are actively deployed on hospital websites and apps to help patients assess symptoms and determine appropriate next steps before seeing a doctor. The sources include peer-reviewed medical literature (PMC/NCBI) and healthcare technology publications, providing credible evidence across multiple domains. The high relevance scores (1.00, 0.90, 0.80) and complete consensus across sources support strong verification of this claim.",
+        "sources": [
+          {
+            "title": "Source 1",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11158416/",
+            "excerpt": "The claim is **verified**: Smart triage chatbots are actively used on hospital websites and apps to help patients determine next steps before seeing a doctor.\n\nNumerous sources confirm that AI-powered",
+            "reliability_score": 1.0,
+            "api_source": "perplexity"
+          },
+          {
+            "title": "Source 2",
+            "url": "https://continentalhospitals.com/blog/ai-chatbots-to-triage-patients-are-they-safe/",
+            "excerpt": "The claim is **verified**: Smart triage chatbots are actively used on hospital websites and apps to help patients determine next steps before seeing a doctor.\n\nNumerous sources confirm that AI-powered",
+            "reliability_score": 0.9,
+            "api_source": "perplexity"
+          },
+          {
+            "title": "Source 3",
+            "url": "https://quickblox.com/blog/role-of-ai-chatbots-in-patient-triage-and-diagnosis/",
+            "excerpt": "The claim is **verified**: Smart triage chatbots are actively used on hospital websites and apps to help patients determine next steps before seeing a doctor.\n\nNumerous sources confirm that AI-powered",
+            "reliability_score": 0.8,
+            "api_source": "perplexity"
+          }
+        ],
+        "verified_at": "2025-10-28T07:29:18.659958"
+      },
+      {
+        "claim": {
+          "claim_text": "The pandemic accelerated digital health adoption, including AI tools",
+          "claim_type": "other",
+          "speaker": "Alex",
+          "timestamp": "03:30",
+          "context": "Explaining factors driving AI adoption in healthcare"
+        },
+        "verification_status": "verified",
+        "confidence_score": 0.95,
+        "explanation": "All three sources from reputable organizations (McKinsey, Nature, National Academy of Medicine) independently confirm that the pandemic accelerated digital health adoption with dramatic increases in telehealth usage (38x peak levels, 11% to 46% consumer adoption). The sources explicitly verify both the acceleration of digital health adoption and the deployment of AI tools during the pandemic, showing strong consensus from high-quality sources.",
+        "sources": [
+          {
+            "title": "Source 1",
+            "url": "https://www.mckinsey.com/industries/healthcare/our-insights/telehealth-a-quarter-trillion-dollar-post-covid-19-reality",
+            "excerpt": "The claim is **verified**: The pandemic accelerated digital health adoption, including the use of AI tools.\n\nMultiple authoritative sources confirm that **the COVID-19 pandemic led to a rapid and unpr",
+            "reliability_score": 1.0,
+            "api_source": "perplexity"
+          },
+          {
+            "title": "Source 2",
+            "url": "https://www.nature.com/articles/s41599-025-04564-x",
+            "excerpt": "The claim is **verified**: The pandemic accelerated digital health adoption, including the use of AI tools.\n\nMultiple authoritative sources confirm that **the COVID-19 pandemic led to a rapid and unpr",
+            "reliability_score": 0.9,
+            "api_source": "perplexity"
+          },
+          {
+            "title": "Source 3",
+            "url": "https://nam.edu/perspectives/digital-health-covid-19-impact-assessment-lessons-learned-and-compelling-needs/",
+            "excerpt": "The claim is **verified**: The pandemic accelerated digital health adoption, including the use of AI tools.\n\nMultiple authoritative sources confirm that **the COVID-19 pandemic led to a rapid and unpr",
+            "reliability_score": 0.8,
+            "api_source": "perplexity"
+          }
+        ],
+        "verified_at": "2025-10-28T07:29:29.599142"
+      }
+    ],
+    "total_claims": 5,
+    "verified_count": 5,
+    "unverified_count": 0
+  },
+  "metrics": {
+    "total_tokens_used": 23075,
+    "api_calls_made": 16,
+    "processing_time_seconds": 96.9841468334198,
+    "model_used": "anthropic/claude-4.5-sonnet"
+  },
+  "generated_at": "2025-10-28T07:29:29.605921"
+}

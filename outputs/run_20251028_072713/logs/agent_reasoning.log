@@ -1,0 +1,386 @@
+================================================================================
+AGENT REASONING LOG
+================================================================================
+
+[2025-10-28T07:27:13.673815] PLANNING
+Task: Episode Processing Pipeline
+Reasoning: Processing episode from ep001_remote_work.json. Will execute: Parse → Summarize → Extract → Fact-check → Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.
+Context: {
+  "episode_file": "sample_inputs/ep001_remote_work.json",
+  "model": "anthropic/claude-4.5-sonnet"
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:13.675276] EXECUTION
+Task: Parse Transcript
+Reasoning: Loading and validating episode transcript JSON file
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:13.676302] VALIDATION
+Task: Parse Transcript
+Reasoning: Transcript successfully parsed and validated
+Outcome: Loaded 19 segments, 326 words
+Context: {
+  "episode_id": "ep001",
+  "title": "The Future of Remote Work",
+  "segment_count": 19,
+  "word_count": 326,
+  "section_count": 7,
+  "speaker_count": 2,
+  "sections": [
+    "Introduction",
+    "Deep Dive",
+    "Examples",
+    "Trends",
+    "Challenges",
+    "Predictions",
+    "Closing"
+  ],
+  "speakers": [
+    "Mark",
+    "Sarah"
+  ],
+  "duration_estimate": "06:00",
+  "validation_status": "passed"
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:13.677688] EXECUTION
+Task: Generate Summary
+Reasoning: Generating 200-300 word summary covering all 7 sections. Using LLM to create engaging, informative summary.
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:23.177738] VALIDATION
+Task: Generate Summary
+Reasoning: Summary generated and validated against word count requirements
+Outcome: Generated 233 word summary
+Context: {
+  "themes": [
+    "remote work",
+    "artificial intelligence",
+    "leadership"
+  ],
+  "sections": [
+    "Introduction",
+    "Deep Dive",
+    "Examples",
+    "Trends",
+    "Challenges",
+    "Predictions",
+    "Closing"
+  ]
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:23.179123] EXECUTION
+Task: Extract Key Notes
+Reasoning: Extractingtakeaways, quotes, and topic tags. Using LLM to identify most valuable and engaging content.
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:36.641688] VALIDATION
+Task: Extract Key Notes
+Reasoning: Key notes extracted and validated
+Outcome: Extracted 5 takeaways, 5 quotes, 10 topics
+Context: {
+  "topics": [
+    "remote-work",
+    "async-communication",
+    "distributed-teams",
+    "workplace-culture",
+    "documentation",
+    "productivity-metrics",
+    "employee-autonomy",
+    "remote-first",
+    "work-from-anywhere",
+    "organizational-trust"
+  ]
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:36.644991] EXECUTION
+Task: Fact-Check Claims
+Reasoning: Identifying factual claims and verifying using multiple search APIs. Will extract verifiable claims, query Perplexity/Tavily/Google Fact Check, and reconcile results across sources to determine consensus verification status.
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:52.613133] VALIDATION
+Task: Fact-Check Claims
+Reasoning: Claims identified and verified using multi-source reconciliation
+Outcome: Fact-checked 1 claims: 0 verified, 1 unverified/uncertain
+Context: {
+  "verification_rate": "0.0%"
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:52.616671] DECISION
+Task: Episode Processing Complete
+Reasoning: All processing stages completed successfully
+Outcome: Processed episode in 38.94s using 9516 tokens
+Context: {
+  "episode_id": "ep001",
+  "summary_words": 233,
+  "fact_checks": 1
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:52.619700] EXECUTION
+Task: Save Report
+Reasoning: Saving episode report in JSON and Markdown formats
+Outcome: Saved to ep001_report.json and ep001_report.md
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:52.621720] PLANNING
+Task: Episode Processing Pipeline
+Reasoning: Processing episode from ep002_ai_healthcare.json. Will execute: Parse → Summarize → Extract → Fact-check → Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.
+Context: {
+  "episode_file": "sample_inputs/ep002_ai_healthcare.json",
+  "model": "anthropic/claude-4.5-sonnet"
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:52.624002] EXECUTION
+Task: Parse Transcript
+Reasoning: Loading and validating episode transcript JSON file
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:52.626427] VALIDATION
+Task: Parse Transcript
+Reasoning: Transcript successfully parsed and validated
+Outcome: Loaded 16 segments, 233 words
+Context: {
+  "episode_id": "ep002",
+  "title": "AI in Healthcare: Hype or Reality?",
+  "segment_count": 16,
+  "word_count": 233,
+  "section_count": 7,
+  "speaker_count": 3,
+  "sections": [
+    "Introduction",
+    "Deep Dive",
+    "Examples",
+    "Challenges",
+    "Trends",
+    "Future",
+    "Closing"
+  ],
+  "speakers": [
+    "David",
+    "Alex",
+    "Dr. Priya"
+  ],
+  "duration_estimate": "05:10",
+  "validation_status": "passed"
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:27:52.628988] EXECUTION
+Task: Generate Summary
+Reasoning: Generating 200-300 word summary covering all 7 sections. Using LLM to create engaging, informative summary.
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:28:05.933228] VALIDATION
+Task: Generate Summary
+Reasoning: Summary generated and validated against word count requirements
+Outcome: Generated 317 word summary
+Context: {
+  "themes": [
+    "artificial intelligence",
+    "healthcare",
+    "technology",
+    "innovation",
+    "regulation"
+  ],
+  "sections": [
+    "Introduction",
+    "Deep Dive",
+    "Examples",
+    "Challenges",
+    "Trends",
+    "Future",
+    "Closing"
+  ]
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:28:05.937996] EXECUTION
+Task: Extract Key Notes
+Reasoning: Extractingtakeaways, quotes, and topic tags. Using LLM to identify most valuable and engaging content.
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:28:16.912761] VALIDATION
+Task: Extract Key Notes
+Reasoning: Key notes extracted and validated
+Outcome: Extracted 5 takeaways, 3 quotes, 10 topics
+Context: {
+  "topics": [
+    "ai-healthcare",
+    "medical-diagnosis",
+    "clinical-ai",
+    "healthcare-technology",
+    "algorithmic-bias",
+    "digital-health",
+    "fda-regulation",
+    "radiology-ai",
+    "patient-triage",
+    "health-data-privacy"
+  ]
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:28:16.919055] EXECUTION
+Task: Fact-Check Claims
+Reasoning: Identifying factual claims and verifying using multiple search APIs. Will extract verifiable claims, query Perplexity/Tavily/Google Fact Check, and reconcile results across sources to determine consensus verification status.
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:29:29.599521] VALIDATION
+Task: Fact-Check Claims
+Reasoning: Claims identified and verified using multi-source reconciliation
+Outcome: Fact-checked 5 claims: 5 verified, 0 unverified/uncertain
+Context: {
+  "verification_rate": "100.0%"
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:29:29.605963] DECISION
+Task: Episode Processing Complete
+Reasoning: All processing stages completed successfully
+Outcome: Processed episode in 96.98s using 23075 tokens
+Context: {
+  "episode_id": "ep002",
+  "summary_words": 317,
+  "fact_checks": 5
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:29:29.611256] EXECUTION
+Task: Save Report
+Reasoning: Saving episode report in JSON and Markdown formats
+Outcome: Saved to ep002_report.json and ep002_report.md
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:29:29.616103] PLANNING
+Task: Episode Processing Pipeline
+Reasoning: Processing episode from ep003_bootstrapping.json. Will execute: Parse → Summarize → Extract → Fact-check → Format. Summarization and extraction can theoretically run in parallel after parsing, but for simplicity and token management, running sequentially.
+Context: {
+  "episode_file": "sample_inputs/ep003_bootstrapping.json",
+  "model": "anthropic/claude-4.5-sonnet"
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:29:29.618651] EXECUTION
+Task: Parse Transcript
+Reasoning: Loading and validating episode transcript JSON file
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:29:29.621173] VALIDATION
+Task: Parse Transcript
+Reasoning: Transcript successfully parsed and validated
+Outcome: Loaded 16 segments, 192 words
+Context: {
+  "episode_id": "ep003",
+  "title": "Bootstrapping vs Fundraising \u2014 Which Path Wins?",
+  "segment_count": 16,
+  "word_count": 192,
+  "section_count": 6,
+  "speaker_count": 3,
+  "sections": [
+    "Introduction",
+    "Deep Dive",
+    "Examples",
+    "Framework",
+    "Pros & Cons",
+    "Closing"
+  ],
+  "speakers": [
+    "Lena",
+    "Samir",
+    "Emily"
+  ],
+  "duration_estimate": "05:10",
+  "validation_status": "passed"
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:29:29.624140] EXECUTION
+Task: Generate Summary
+Reasoning: Generating 200-300 word summary covering all 6 sections. Using LLM to create engaging, informative summary.
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:29:38.596359] VALIDATION
+Task: Generate Summary
+Reasoning: Summary generated and validated against word count requirements
+Outcome: Generated 226 word summary
+Context: {
+  "themes": [
+    "artificial intelligence",
+    "technology",
+    "business",
+    "leadership",
+    "entrepreneurship"
+  ],
+  "sections": [
+    "Introduction",
+    "Deep Dive",
+    "Examples",
+    "Framework",
+    "Pros & Cons",
+    "Closing"
+  ]
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:29:38.603808] EXECUTION
+Task: Extract Key Notes
+Reasoning: Extractingtakeaways, quotes, and topic tags. Using LLM to identify most valuable and engaging content.
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:29:50.198907] VALIDATION
+Task: Extract Key Notes
+Reasoning: Key notes extracted and validated
+Outcome: Extracted 5 takeaways, 4 quotes, 10 topics
+Context: {
+  "topics": [
+    "bootstrapping",
+    "venture-capital",
+    "startup-funding",
+    "entrepreneurship",
+    "founder-decisions",
+    "saas-business",
+    "market-strategy",
+    "business-growth",
+    "equity-dilution",
+    "profitability"
+  ]
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:29:50.206764] EXECUTION
+Task: Fact-Check Claims
+Reasoning: Identifying factual claims and verifying using multiple search APIs. Will extract verifiable claims, query Perplexity/Tavily/Google Fact Check, and reconcile results across sources to determine consensus verification status.
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:30:19.896815] VALIDATION
+Task: Fact-Check Claims
+Reasoning: Claims identified and verified using multi-source reconciliation
+Outcome: Fact-checked 2 claims: 0 verified, 2 unverified/uncertain
+Context: {
+  "verification_rate": "0.0%"
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:30:19.902806] DECISION
+Task: Episode Processing Complete
+Reasoning: All processing stages completed successfully
+Outcome: Processed episode in 50.29s using 32990 tokens
+Context: {
+  "episode_id": "ep003",
+  "summary_words": 226,
+  "fact_checks": 2
+}
+--------------------------------------------------------------------------------
+
+[2025-10-28T07:30:19.909274] EXECUTION
+Task: Save Report
+Reasoning: Saving episode report in JSON and Markdown formats
+Outcome: Saved to ep003_report.json and ep003_report.md
+--------------------------------------------------------------------------------
+
